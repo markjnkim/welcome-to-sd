@@ -90,3 +90,21 @@ nav li a {
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
+#lockbox {
+  
+}
+
+#responsive-img {
+  width: 120%;
+  height: auto;
+  padding: 20px;
+  min-width: 100%;
+}
+
+.min-div-width {
+  min-width: 300px;
+}
+
+#icon-shrink {
+  display: hide;
+}
