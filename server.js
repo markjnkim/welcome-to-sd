@@ -5,6 +5,8 @@
 
 var express = require("express");
 var bodyParser = require("body-parser");
+var path = require("path");
+var lodash = require("lodash");
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -27,8 +29,11 @@ app.use(bodyParser.json());
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
-app.get("/", function (req, res) {
-    res.send("Welcome to SD");
+app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname,"./public/index.html"));
+})
+app.get("/check_in", function (req, res) {
+    res.sendFile(path.join(__dirname,"./public/check_in.html"));
 })
 
 // =============================================================================
