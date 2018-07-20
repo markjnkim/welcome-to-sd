@@ -1,0 +1,28 @@
+{
+  "name": "welcome",
+  "version": "1.0.0",
+  "description": "airbnb house guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markjnkim/welcome-to-sd.git"
+  },
+  "keywords": [
+    "airbnb"
+  ],
+  "author": "Mark Kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markjnkim/welcome-to-sd/issues"
+  },
+  "homepage": "https://github.com/markjnkim/welcome-to-sd#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "npm": "^6.2.0"
+  }
+}
