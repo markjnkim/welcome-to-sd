@@ -24,17 +24,17 @@
     <nav class="white">
       <div class="nav-wrapper container">
         <div class="container">
-          <a href="#navbar" class="brand-logo">
+          <a href="#navbar" class="brand-logo right" id="nav-icon">
             <i class="material-icons">home</i>
           </a>
         </div>
 
         <a href="#" data-activates="mobile-demo" class="button-collapse">
-          <i class="mdi-navigation-menu"></i>
+          <i class="material-icons">dehaze</i>
         </a>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a href="/check_in">Check-in</a>
+            <a href="/checkin">Check-in</a>
           </li>
           <li>
             <a class="head-link" href="#aboutus">About Us</a>
@@ -42,18 +42,24 @@
           <li>
             <a class="head-link" href="#contactus">Contact Us</a>
           </li>
+          <li>
+              <a href="/checkout">Check-out</a>
+            </li>
 
         </ul>
         <ul class="right side-nav" id="mobile-demo">
           <li>
-            <a href="/check_in">Check-in</a>
+            <a href="/checkin">Check-in</a>
           </li>
           <li>
-            <a class="head-link" href="#aboutus">About Us</a>
+            <a class="head-link sidenav-close" href="#aboutus">About Us</a>
           </li>
 
           <li>
-            <a class="head-link" href="#contactus">Contact Us</a>
+            <a class="head-link sidenav-close" href="#contactus">Contact Us</a>
+          </li>
+          <li>
+            <a href="/checkout">Check-out</a>
           </li>
         </ul>
       </div>
@@ -65,12 +71,14 @@
       <div class="container">
         <br>
         <br>
-        <h1 class="header center orange-text text-darken-4">Welcome to San Diego</h1>
+        <h1 class="header center orange-text text-darken-4">
+          <strong>Welcome to San Diego</strong>
+        </h1>
         <div class="row center">
           <h5 class="header col s12 light white-text">A guide to help you on your journey</h5>
         </div>
         <div class="row center">
-          <a href="#" class="btn-large waves-effect waves-light orange darken-4">Find more</a>
+          <a href="/checkin" class="btn-large waves-effect waves-light orange darken-4">Check-in</a>
         </div>
         <br>
         <br>
@@ -118,8 +126,12 @@
             </h2>
             <!-- #3 feature -->
             <a href="#emergency">
-              <h5 class="center">Emergency Contact</h5>
-              <p class="light">911<br>Poison Controll</p>
+              <h5 class="center">On the House</h5>
+              <p class="light">Coffee
+                <br>Continental Breakfast
+                <br>Filtered Water
+              <br>
+            </p>
             </a>
           </div>
         </div>
@@ -130,12 +142,12 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h3 class="header col s12" style="color: rgb(8, 8, 8);">over 78 miles of coastline</h5>
+          <h3 class="header col s12" style="color: rgb(8, 8, 8);">year round average weather is 70F(21C)</h5>
         </div>
       </div>
     </div>
     <div class="parallax">
-      <img src="../images/la_jolla_daisies.jpg" alt="beach">
+      <img src="../images/beach-exotic.jpg" alt="beach">
     </div>
   </div>
 
@@ -147,13 +159,13 @@
       <br>
       <div class="row">
         <div class="col s6">
-          <a href="/check_in">
-            <img class="materialboxed responsive-img" src="../images/Check-in-1024x583.jpg" />
+          <a href="/checkin">
+            <img class="responsive-img" src="../images/Check-in-1024x583.jpg" />
           </a>
         </div>
         <div class="col s6">
-          <a href="/check_in.html#rules">
-            <img class="materialboxed responsive-img" src="../images/helpful_tips.jpg">
+          <a href="/checkin#rules">
+            <img class="responsive-img" src="../images/helpful_tips.jpg">
           </a>
         </div>
       </div>
@@ -185,9 +197,7 @@
           <h3>About Us</h3>
         </div>
         <div class="center row col s12">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <p>We have had guests from every corner of the globe and love to share our experiences</p>
         </div>
 
       </div>

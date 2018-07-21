@@ -108,3 +108,19 @@ nav li a {
 #icon-shrink {
   display: hide;
 }
+
+.headline {
+  font-family: 'Knewave', cursive;
+}
+
+/* .font-content {
+  font-family: 'Varela Round', sans-serif;
+} */
+
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+#nav-icon {
+  padding: 0 320px;
+}

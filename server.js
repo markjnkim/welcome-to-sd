@@ -23,18 +23,25 @@ var PORT = process.env.PORT || 8080;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+app.use('/images', express.static(__dirname + '/images'));
+app.use('/css', express.static(__dirname + '/css'));
+app.use('/js', express.static(__dirname + '/js'));
 
 // ================================================================================
 // ROUTER
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
+app.get("/checkin", function (req, res) {
+    res.sendFile(path.join(__dirname,"./public/checkin.html"));
+})
+
+app.get("/checkout", function (req, res) {
+    res.sendFile(path.join(__dirname,"./public/checkout.html"));
+})
+
 app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname,"./public/index.html"));
-})
-app.get("/check_in", function (req, res) {
-    res.sendFile(path.join(__dirname,"./public/check_in.html"));
 })
 
 // =============================================================================
