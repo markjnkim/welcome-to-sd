@@ -24,7 +24,7 @@
     <nav class="white">
       <div class="nav-wrapper container">
         <div class="container">
-          
+
           <a href="#" data-activates="mobile-demo" class="button-collapse">
             <i class="material-icons">dehaze</i>
           </a>
@@ -46,21 +46,21 @@
             <li>
               <a href="/checkout">Check-out</a>
             </li>
-            
+
           </ul>
           <ul class="right side-nav" id="mobile-demo">
-              <li class="active">
-                  <a href="/index.html#navbar">
-                    <i class="material-icons">home</i>
-                  </a>
-                </li>
+            <li class="active">
+              <a href="/index.html#navbar">
+                <i class="material-icons">home</i>
+              </a>
+            </li>
             <li>
               <a href="/checkin">Check-in</a>
             </li>
             <li>
               <a class="head-link sidenav-close" href="#aboutus">About Us</a>
             </li>
-            
+
             <li>
               <a class="head-link sidenav-close" href="#contactus">Contact Us</a>
             </li>
@@ -78,7 +78,7 @@
       <div class="container">
         <br>
         <br>
-        <h1 class="header center orange-text text-darken-4">
+        <h1 id="title-header" class="header center orange-text text-darken-4">
           <strong>Welcome to San Diego</strong>
         </h1>
         <div class="row center">
@@ -102,11 +102,12 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center" style="color:#333">
-              <i class="mdi-av-new-releases"></i>
+              <a href="#local-guide">
+                <i class="medium material-icons">local_dining</i>
+              </a>
             </h2>
             <!-- #1 feature -->
             <h5 class="center">Live like a Local</h5>
-
             <p class="light">Insights gathered over 30 years in this beautiful city can surprise even repeat visitors </p>
           </div>
         </div>
@@ -114,12 +115,12 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center" style="color:#333">
-              <!-- <i class="mdi-hardware-cast"></i> -->
-              <i class="medium material-icons">tv</i>
+              <a href="#tv-guide">
+                <i class="medium material-icons">tv</i>
+              </a>
             </h2>
             <!-- #2 feature -->
             <h5 class="center">Cut the Cord</h5>
-
             <p class="light">Netflix, Amazon Prime, DirecTV NOW, HBOgo, ESPN, AMC, NBC, ABC, FOX, and much more </p>
           </div>
         </div>
@@ -132,14 +133,13 @@
               </a>
             </h2>
             <!-- #3 feature -->
-            <a href="#emergency">
-              <h5 class="center">On the House</h5>
-              <p class="light">Coffee
-                <br>Continental Breakfast
-                <br>Filtered Water
-                <br>
-              </p>
-            </a>
+            <h5 class="center">On the House</h5>
+            <p class="light center">Wifi
+              <br>Coffee
+              <br>Continental Breakfast
+              <br>Filtered Water
+              <br>
+            </p>
           </div>
         </div>
       </div>
@@ -149,7 +149,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h3 class="header col s12" style="color: rgb(8, 8, 8);">year round average weather is 70F(21C)</h5>
+          <h5 class="header col s12" style="color: rgb(8, 8, 8);">year round average temperature is 70°F(21°C)</h5>
         </div>
       </div>
     </div>
@@ -167,12 +167,12 @@
       <div class="row">
         <div class="col s6">
           <a href="/checkin">
-            <img class="responsive-img" src="../images/Check-in-1024x583.jpg" />
+            <img class="responsive-img" src="../images/check-in.jpg" alt="check-in" />
           </a>
         </div>
         <div class="col s6">
           <a href="/checkin#rules">
-            <img class="responsive-img" src="../images/helpful_tips.jpg">
+            <img class="responsive-img" src="../images/helpful_tips.jpg" alt="rules">
           </a>
         </div>
       </div>
@@ -180,10 +180,14 @@
 
       <div class="row">
         <div class="col s6">
-          <img class="materialboxed responsive-img" src="../images/1397154567yttyy.jpg">
+          <a href="#emergency">
+            <img class="responsive-img" src="../images/emergency.png" alt="emergency">
+          </a>
         </div>
         <div class="col s6">
-          <img class="materialboxed responsive-img" src="../images/1399827845b0i1k.jpg">
+          <a href="#house_guide">
+            <img class="responsive-img" src="../images/house-icon.png" alt="house guide">
+          </a>
         </div>
       </div>
       <!--row-->
@@ -191,22 +195,21 @@
       <div class="center">
         <a class="waves-effect waves-light btn purple lighten-1">View more</a>
       </div>
-
     </div>
   </div>
-
 
   <div class="parallax-container valign-wrapper section scrollspy" id="aboutus">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="center row col s3">
-
-          <h3>About Us</h3>
+          <h3>Mi Casa Su Casa</h3>
         </div>
         <div class="center row col s12">
-          <p>We have had guests from every corner of the globe and love to share our experiences</p>
+          <p>My goal is for my guests to have terrific experiences in San Diego. Please let me know if you have any questions
+            or requests. We have had guests from every corner of the globe and love to share our experiences</p>
+          <br>
+          <br>
         </div>
-
       </div>
     </div>
     <div class="parallax">

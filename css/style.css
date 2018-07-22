@@ -124,3 +124,13 @@ body {
 #nav-icon {
   padding: 0 -120px;
 }
+
+#title-header {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Merriweather', serif; */
+  /* font-family: 'Josefin Sans', sans-serif; */
+  /* font-family: 'Knewave', cursive; */
+  /* font-family: 'Varela Round', sans-serif; */
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
