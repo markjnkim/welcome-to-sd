@@ -24,7 +24,7 @@
     <nav class="white">
       <div class="nav-wrapper container">
         <div class="container">
-          
+
           <a href="#" data-activates="mobile-demo" class="button-collapse">
             <i class="material-icons">dehaze</i>
           </a>
@@ -46,21 +46,21 @@
             <li>
               <a href="/checkout">Check-out</a>
             </li>
-            
+
           </ul>
           <ul class="right side-nav" id="mobile-demo">
-              <li class="active">
-                  <a href="/index.html#navbar">
-                    <i class="material-icons">home</i>
-                  </a>
-                </li>
+            <li class="active">
+              <a href="/index.html#navbar">
+                <i class="material-icons">home</i>
+              </a>
+            </li>
             <li>
               <a href="/checkin">Check-in</a>
             </li>
             <li>
               <a class="head-link sidenav-close" href="#aboutus">About Us</a>
             </li>
-            
+
             <li>
               <a class="head-link sidenav-close" href="#contactus">Contact Us</a>
             </li>
@@ -78,7 +78,7 @@
       <div class="container">
         <br>
         <br>
-        <h1 class="header center orange-text text-darken-4">
+        <h1 id="title-header" class="header center orange-text text-darken-4">
           <strong>Welcome to San Diego</strong>
         </h1>
         <div class="row center">
@@ -87,8 +87,7 @@
         <div class="row center">
           <a href="/checkin" class="btn-large waves-effect waves-light orange darken-4">Check-in</a>
         </div>
-        <br>
-        <br>
+
       </div>
     </div>
     <div class="parallax">
@@ -102,11 +101,12 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center" style="color:#333">
-              <i class="mdi-av-new-releases"></i>
+              <a href="#local-guide">
+                <i class="medium material-icons">local_dining</i>
+              </a>
             </h2>
             <!-- #1 feature -->
             <h5 class="center">Live like a Local</h5>
-
             <p class="light">Insights gathered over 30 years in this beautiful city can surprise even repeat visitors </p>
           </div>
         </div>
@@ -114,12 +114,12 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center" style="color:#333">
-              <!-- <i class="mdi-hardware-cast"></i> -->
-              <i class="medium material-icons">tv</i>
+              <a href="#tv-guide">
+                <i class="medium material-icons">tv</i>
+              </a>
             </h2>
             <!-- #2 feature -->
             <h5 class="center">Cut the Cord</h5>
-
             <p class="light">Netflix, Amazon Prime, DirecTV NOW, HBOgo, ESPN, AMC, NBC, ABC, FOX, and much more </p>
           </div>
         </div>
@@ -132,14 +132,13 @@
               </a>
             </h2>
             <!-- #3 feature -->
-            <a href="#emergency">
-              <h5 class="center">On the House</h5>
-              <p class="light">Coffee
-                <br>Continental Breakfast
-                <br>Filtered Water
-                <br>
-              </p>
-            </a>
+            <h5 class="center">On the House</h5>
+            <p class="light center">Wifi
+              <br>Coffee
+              <br>Continental Breakfast
+              <br>Filtered Water
+              <br>
+            </p>
           </div>
         </div>
       </div>
@@ -149,7 +148,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h3 class="header col s12" style="color: rgb(8, 8, 8);">year round average weather is 70F(21C)</h5>
+          <h5 class="header col s12" style="color: rgb(8, 8, 8);">year round average temperature is 70°F(21°C)</h5>
         </div>
       </div>
     </div>
@@ -165,25 +164,26 @@
       <h4 class="center">Getting Started</h4>
       <br>
       <div class="row">
-        <div class="col s6">
+        <div class="col s6 m3">
           <a href="/checkin">
-            <img class="responsive-img" src="../images/Check-in-1024x583.jpg" />
+            <img class="responsive-img" src="../images/check-in.jpg" alt="check-in" />
           </a>
         </div>
-        <div class="col s6">
+        <div class="col s6 m3">
           <a href="/checkin#rules">
-            <img class="responsive-img" src="../images/helpful_tips.jpg">
+            <img class="responsive-img" src="../images/helpful_tips.jpg" alt="rules">
           </a>
         </div>
-      </div>
-      <!--row-->
 
-      <div class="row">
-        <div class="col s6">
-          <img class="materialboxed responsive-img" src="../images/1397154567yttyy.jpg">
+        <div class="col s6 m3 center">
+          <a href="#emergency">
+            <img id="res-height" class="responsive-img" src="../images/emergency.png" alt="emergency">
+          </a>
         </div>
-        <div class="col s6">
-          <img class="materialboxed responsive-img" src="../images/1399827845b0i1k.jpg">
+        <div class="col s6 m3">
+          <a href="#house_guide">
+            <img class="responsive-img" src="../images/room-guide.jpeg" alt="house guide">
+          </a>
         </div>
       </div>
       <!--row-->
@@ -191,22 +191,24 @@
       <div class="center">
         <a class="waves-effect waves-light btn purple lighten-1">View more</a>
       </div>
-
     </div>
   </div>
-
 
   <div class="parallax-container valign-wrapper section scrollspy" id="aboutus">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="center row col s3">
-
-          <h3>About Us</h3>
+          <h3>Mi Casa Su Casa</h3>
         </div>
         <div class="center row col s12">
-          <p>We have had guests from every corner of the globe and love to share our experiences</p>
+          <p>Where we love is home -
+            <br> home that our feet may leave, but not our hearts.
+            <br>
+            <em>Oliver Wendell Holmes, Sr.</em>
+          </p>
+          <br>
+          <br>
         </div>
-
       </div>
     </div>
     <div class="parallax">
@@ -214,58 +216,54 @@
     </div>
   </div>
 
-
-
   <div class="container section scrollspy" id="contactus">
     <div class="section">
       <br>
       <br>
       <h2>Contact Us</h2>
-
-      <div class="row">
-
-        <form class="col s8">
-
+      <form action="/index" id="contact-form" method="post" role="form">
+     
           <div class="row">
-            <div class="input-field col s6">
-              <input id="name" type="text" class="validate">
-              <label for="name">Your Name</label>
-            </div>
+            <form class="col s8">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="name" type="text" class="validate">
+                  <label for="name">Your Name</label>
+                </div>
 
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Your Email</label>
+                </div>
+              </div>
 
-            <div class="input-field col s6">
-              <input id="email" type="email" class="validate">
-              <label for="email">Your Email</label>
-            </div>
-          </div>
-          <!--row-->
+              <!--row-->
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="message-sub" type="email" class="validate">
+                  <label for="message-sub">Message Subject</label>
+                </div>
+              </div>
 
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="message-sub" type="email" class="validate">
-              <label for="message-sub">Message Subject</label>
-            </div>
-          </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="text_area" class="materialize-textarea"></textarea>
+                  <label for="text_area">Your Message</label>
+                </div>
+              </div>
 
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="text_area" class="materialize-textarea"></textarea>
-              <label for="text_area">Your Message</label>
-            </div>
-          </div>
-
-
-          <div>
-            <a class="waves-effect waves-light btn purple lighten-1">Send Message
-              <i class="mdi-content-send right"></i>
-            </a>
-          </div>
-        </form>
+              <div>
+                <a class="waves-effect waves-light btn purple lighten-1" style="padding-bottom:40px;">Send Message
+                  <i class="material-icons icon">send</i>
+                </a>
+              </div>
+   
+      </form>
 
         <div class="col s12 m4">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam
+            We strive to make every stay with us a 5 star experience so please do not hesitate if you have any questions, concerns, or
+            requests.
           </p>
           <ul class="share-buttons">
             <li>
@@ -285,7 +283,7 @@
             </li>
           </ul>
         </div>
-      </div>
+        </div>
     </div>
   </div>
 
@@ -294,7 +292,7 @@
 
     <div class="footer-copyright">
       <div class="container">
-        <p>Copyright © Your website name</p>
+        <p>Copyright © guide-san-diego.com</p>
       </div>
     </div>
   </footer>
