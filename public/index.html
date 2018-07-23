@@ -87,8 +87,7 @@
         <div class="row center">
           <a href="/checkin" class="btn-large waves-effect waves-light orange darken-4">Check-in</a>
         </div>
-        <br>
-        <br>
+
       </div>
     </div>
     <div class="parallax">
@@ -202,8 +201,11 @@
           <h3>Mi Casa Su Casa</h3>
         </div>
         <div class="center row col s12">
-          <p>My goal is for my guests to have terrific experiences in San Diego. Please let me know if you have any questions
-            or requests. We have had guests from every corner of the globe and love to share our experiences</p>
+          <p>Where we love is home -
+            <br> home that our feet may leave, but not our hearts.
+            <br>
+            <em>Oliver Wendell Holmes, Sr.</em>
+          </p>
           <br>
           <br>
         </div>
@@ -219,47 +221,49 @@
       <br>
       <br>
       <h2>Contact Us</h2>
-      <div class="row">
-        <form class="col s8">
+      <form action="/index" id="contact-form" method="post" role="form">
+        <fieldset>
           <div class="row">
-            <div class="input-field col s6">
-              <input id="name" type="text" class="validate">
-              <label for="name">Your Name</label>
-            </div>
+            <form class="col s8">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="name" type="text" class="validate">
+                  <label for="name">Your Name</label>
+                </div>
 
-            <div class="input-field col s6">
-              <input id="email" type="email" class="validate">
-              <label for="email">Your Email</label>
-            </div>
-          </div>
-          <!--row-->
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Your Email</label>
+                </div>
+              </div>
 
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="message-sub" type="email" class="validate">
-              <label for="message-sub">Message Subject</label>
-            </div>
-          </div>
+              <!--row-->
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="message-sub" type="email" class="validate">
+                  <label for="message-sub">Message Subject</label>
+                </div>
+              </div>
 
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="text_area" class="materialize-textarea"></textarea>
-              <label for="text_area">Your Message</label>
-            </div>
-          </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="text_area" class="materialize-textarea"></textarea>
+                  <label for="text_area">Your Message</label>
+                </div>
+              </div>
 
-
-          <div>
-            <a class="waves-effect waves-light btn purple lighten-1">Send Message
-              <i class="mdi-content-send right"></i>
-            </a>
-          </div>
-        </form>
+              <div>
+                <a class="waves-effect waves-light btn purple lighten-1" style="padding-bottom:40px;">Send Message
+                  <i class="material-icons icon">send</i>
+                </a>
+              </div>
+        </fieldset>
+      </form>
 
         <div class="col s12 m4">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam
+            We strive to make every stay with us a 5 star experience so please do not hesitate if you have any questions, concerns, or
+            requests.
           </p>
           <ul class="share-buttons">
             <li>
@@ -279,7 +283,7 @@
             </li>
           </ul>
         </div>
-      </div>
+        </div>
     </div>
   </div>
 
@@ -288,7 +292,7 @@
 
     <div class="footer-copyright">
       <div class="container">
-        <p>Copyright © Your website name</p>
+        <p>Copyright © guide-san-diego.com</p>
       </div>
     </div>
   </footer>
