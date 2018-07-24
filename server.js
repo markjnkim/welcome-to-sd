@@ -32,10 +32,12 @@ app.use('/css', express.static(__dirname + '/css'));
 app.use('/js', express.static(__dirname + '/js'));
 
 // Register `hbs.engine with the Express app
-app.engine('.hbs', exphbs({defaultLayout: 'main',
+app.engine('.hbs', exphbs({
+    defaultLayout: 'main',
     extname: '.hbs', 
     layoutsDir:'views/layouts/', 
-    partialsDir:'views/partials/'}));
+    partialsDir:'views/partials/'
+}));
 app.set('view engine', '.hbs'); 
 
 // var hbs = exphbs.create({ /*config */ });
@@ -44,7 +46,7 @@ app.set('view engine', '.hbs');
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
-app.get("/checkin", function (req, res) {
+app.get("/policy", function (req, res) {
     res.render('policy');
 })
 
