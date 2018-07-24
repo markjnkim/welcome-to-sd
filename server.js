@@ -3,11 +3,11 @@
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================
 
-const express = require("express");
-const bodyParser = require("body-parser");
-const path = require("path");
-const lodash = require("lodash");
-const nodemailer = require('nodemailer');
+var express = require("express");
+var exphbs = require("express-handlebars");
+var bodyParser = require("body-parser");
+var path = require("path");
+var nodemailer = require("nodemailer");
 
 
 // ==============================================================================
@@ -16,18 +16,29 @@ const nodemailer = require('nodemailer');
 // ==============================================================================
 
 // Tells node that we are creating an "express" server
-const app = express();
+var app = express();
+var exphbs= require('express-handlebars');
 
 // Sets an initial port. We"ll use this later in our listener
-const PORT = process.env.PORT || 8000;
+var PORT = process.env.PORT || 1337;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+// Static files with Express 
 app.use('/images', express.static(__dirname + '/images'));
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/js', express.static(__dirname + '/js'));
 
+// Register `hbs.engine with the Express app
+app.engine('.hbs', exphbs({defaultLayout: 'main',
+    extname: '.hbs', 
+    layoutsDir:'views/layouts/', 
+    partialsDir:'views/partials/'}));
+app.set('view engine', '.hbs'); 
+
+// var hbs = exphbs.create({ /*config */ });
 // ================================================================================
 // ROUTER
 // The below points our server to a series of "route" files.
@@ -42,7 +53,7 @@ app.get("/checkout", function (req, res) {
 })
 
 app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "./public/index.html"));
+    res.render('home');
 })
 
 // POST route from contact form
