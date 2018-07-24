@@ -45,11 +45,7 @@ app.set('view engine', '.hbs');
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 app.get("/checkin", function (req, res) {
-    res.sendFile(path.join(__dirname, "./public/checkin.html"));
-})
-
-app.get("/checkout", function (req, res) {
-    res.sendFile(path.join(__dirname, "./public/checkout.html"));
+    res.render('policy');
 })
 
 app.get("*", function (req, res) {
