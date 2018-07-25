@@ -155,3 +155,10 @@ a.anchor {
   top: -250px;
   visibility: hidden;
 }
+
+a.grocery-anchor {
+  display: block;
+  position: relative;
+  top: -20px;
+  visibility: hidden;
+}
