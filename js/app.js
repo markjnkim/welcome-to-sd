@@ -6,13 +6,12 @@ $(document).ready(function () {
   //     draggable: true
   // });
 
-  $('p#grocery_list').hide();
+  $('div#grocery_list').hide();
   $('a#grocery').click(toggleList);
-
 
 });
 function toggleList() {
-  $('p#grocery_list').slideToggle();
+  $('div#grocery_list').slideToggle();
 }
 
 
