@@ -50,6 +50,10 @@ app.get("/policy", function (req, res) {
     res.render('policy');
 })
 
+app.get("/local_guide", function (req, res) {
+    res.render('local_guide');
+})
+
 app.get("*", function (req, res) {
     res.render('home');
 })
