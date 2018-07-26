@@ -33,10 +33,10 @@ app.use('/js', express.static(__dirname + '/js'));
 
 // Register `hbs.engine with the Express app
 app.engine('.hbs', exphbs({
-    defaultLayout: 'main',
-    extname: '.hbs', 
-    layoutsDir:'views/layouts/', 
-    partialsDir:'views/partials/'
+    defaultLayout:  'main',
+    extname:        '.hbs', 
+    layoutsDir:     'views/layouts/', 
+    partialsDir:    'views/partials/'
 }));
 app.set('view engine', '.hbs'); 
 

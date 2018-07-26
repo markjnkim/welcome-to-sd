@@ -6,15 +6,23 @@ $(document).ready(function () {
   //     draggable: true
   // });
 
-  $('div#grocery_list').hide();
+// Slide Grocery List Responsive to screen size break 800px
+  $('div#grocery_list_s').hide();
+  $('div#grocery_list_b').hide();
   $('a#grocery').click(toggleList);
 
 });
 function toggleList() {
-  $('div#grocery_list').slideToggle();
+  if ($(window).width() <= 800) {
+    $('div#grocery_list_b').hide();
+    $('div#grocery_list_s').slideToggle();
+  }else {
+    $('div#grocery_list_s').hide();
+    $('div#grocery_list_b').slideToggle();
+  }
 }
 
-
+// Nav bar link animation
 $('.head-link').click(function (e) {
   e.preventDefault();
 
@@ -27,7 +35,7 @@ $('.head-link').click(function (e) {
     }, 800);
   }
 });
-
+// Google Analytics
 (function (i, s, o, g, r, a, m) {
   i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
       (i[r].q = i[r].q || []).push(arguments)

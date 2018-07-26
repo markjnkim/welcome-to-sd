@@ -10,7 +10,7 @@
                 <h5 class="header col s12 light white-text">A guide to help you on your journey</h5>
             </div>
             <div class="row center">
-                <a href="/policy#check-in" class="btn-large waves-effect waves-light orange darken-4">Check-in</a>
+                <a href="/policy#check-in" class="btn-large waves-effect waves-light orange darken-4 hvr-grow">Check-in</a>
             </div>
 
         </div>
@@ -26,65 +26,149 @@
         <h4 class="center">Getting Hungry?</h4>
         <br>
         <div class="row">
-            <div class="col s6 m3">
-                <a class="anchor"></a>
-                <a id="grocery" href="#grocery-anchor">
+            <div class="col s6 m4 l3">
+                {{!--
+                <a class="anchor"></a> --}}
+                <a id="grocery" href="#grocery-anchor" class="hvr-grow">
                     <img class="responsive-img" src="../images/grocery.png" alt="grocery" />
                 </a>
-                {{!--
-                <a href="#grocery_list" id="grocery_list"> --}} {{!--
-                    <p id="grocery_list">Grocery list</p> --}}
-                    <div class="row" id="grocery_list">
-                        <div class="col s12">
-                            <div class="card">
-                                <div id="grocery_list" class="card-image">
-                                    <a href="http://www.organicfood-sandiego.com/">
-                                        <img src="images/windmill_farms_logo.jpg">
-                                    </a>
-                                </div>
-                                <div class="card-content">
-
-                                    <p>Windmill Farms
-                                        <br>Great produce
-                                        <br>Bulk Snacks
-                                        <br>Organic Options
-                                        <br>Cheap Sandwiches
-                                        <br>Fresh Produce
-                                    </p>
-
-                                </div>
-                                <div class="card-action">
-                                    <a href="https://www.yelp.com/biz/windmill-farms-san-diego?osq=windmill+Farms">Reviews</a>
-                                    <a href="https://www.yelp.com/map/windmill-farms-san-diego?start=college%20blvd%20lance%20san%20diego%2C%20ca%2092120">Directions</a>
-                                </div>
+                <div class="row" id="grocery_list_s">
+                    <div class="col s12">
+                        <div class="card">
+                            <div class="card-image">
+                                <a class="hvr-grow" href="http://www.organicfood-sandiego.com/">
+                                    <img src="images/windmill_farms_logo.jpg">
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <p>Fresh produce
+                                    <br>Bulk Snacks
+                                    <br>Organic Options
+                                    <br>Cheap Sandwiches
+                                    <br>9am - 8pm
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="hvr-grow" href="https://www.yelp.com/biz/windmill-farms-san-diego?osq=windmill+Farms">Profile</a>
+                                <a  class="hvr-grow" href="https://www.yelp.com/map/windmill-farms-san-diego?start=college%20blvd%20lance%20san%20diego%2C%20ca%2092120">Directions</a>
                             </div>
                         </div>
                     </div>
-                    {{!-- </a> --}}
+                    <div class="col s12">
+                        <div class="card">
+                            <div class="card-image center">
+                                <a class="hvr-grow" href="http://www.organicfood-sandiego.com/">
+                                    <img class="center" id="down_size" src="images/trader-joes.jpg">
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <p>Free Parking
+                                    <br>Unique products
+                                    <br>Ready Meals
+                                    <br>Organic Options
+                                    <br>Tasty Snacks
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a  class="hvr-grow" href="https://www.yelp.com/biz/trader-joes-san-diego-26?osq=Trader+Joes+Near+Me">Profile</a>
+                                <a  class="hvr-grow" href="https://www.yelp.com/map/trader-joes-san-diego-26?start=college%20blvd%20lance%20san%20diego%2C%20ca%2092120">Directions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="col s6 m3">
-                <a href="/policy#rules">
+                <a class="hvr-grow" href="/policy#rules">
                     <img class="responsive-img" src="../images/helpful_tips.jpg" alt="rules">
                 </a>
             </div>
 
             <div class="col s6 m3 center">
-                <a href="#emergency">
+                <a class="hvr-grow" href="#emergency">
                     <img id="res-height" class="responsive-img" src="../images/emergency.png" alt="emergency">
                 </a>
             </div>
             <div class="col s6 m3">
-                <a href="https://www.airbnb.com/help/article/100/where-can-i-find-check-in-information-for-my-trip">
+                <a class="hvr-grow" href="https://www.airbnb.com/help/article/100/where-can-i-find-check-in-information-for-my-trip">
                     <img class="responsive-img" src="../images/room-guide.jpeg" alt="house guide">
                 </a>
             </div>
         </div>
-        <!--row-->
 
-        <div class="center">
-            <a href="https://www.airbnb.com/help?audience=guest" class="waves-effect waves-light btn purple lighten-1">More Help</a>
+        <div id="grocery_list_b" class="row">
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image">
+                        <a class="hvr-grow" href="http://www.organicfood-sandiego.com/">
+                            <img src="images/windmill_farms_logo.jpg">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>Fresh produce
+                            <br>Bulk Snacks
+                            <br>Organic Options
+                            <br>Cheap Sandwiches
+                            <br>9am - 8pm
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="hvr-grow" href="https://www.yelp.com/biz/windmill-farms-san-diego?osq=windmill+Farms">Profile</a>
+                        <a class="hvr-grow" href="https://www.yelp.com/map/windmill-farms-san-diego?start=college%20blvd%20lance%20san%20diego%2C%20ca%2092120">Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image center">
+                        <a class="hvr-grow" href="http://www.organicfood-sandiego.com/">
+                            <img class="center" id="down_size" src="images/trader-joes.jpg">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>Free Parking
+                            <br>Unique products
+                            <br>Ready Meals
+                            <br>Organic Options
+                            <br>Tasty Snacks
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="hvr-grow" href="https://www.yelp.com/biz/trader-joes-san-diego-26?osq=Trader+Joes+Near+Me">Profile</a>
+                        <a class="hvr-grow" href="https://www.yelp.com/map/trader-joes-san-diego-26?start=college%20blvd%20lance%20san%20diego%2C%20ca%2092120">Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image">
+                        <a class="hvr-grow" href="http://www.organicfood-sandiego.com/">
+                            <img src="images/windmill_farms_logo.jpg">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>Windmill Farms
+                            <br>Great produce
+                            <br>Bulk Snacks
+                            <br>Organic Options
+                            <br>Cheap Sandwiches
+                            <br>Fresh Produce
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="hvr-grow" href="https://www.yelp.com/biz/windmill-farms-san-diego?osq=windmill+Farms">Profile</a>
+                        <a class="hvr-grow" href="https://www.yelp.com/map/windmill-farms-san-diego?start=college%20blvd%20lance%20san%20diego%2C%20ca%2092120">Directions</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!--row-->
+
+    <div class="center">
+        <a class="hvr-grow" href="https://www.airbnb.com/help?audience=guest" class="waves-effect waves-light btn purple lighten-1">More Help</a>
+    </div>
+</div>
 </div>
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -95,6 +179,6 @@
         </div>
     </div>
     <div class="parallax">
-        <img src="../images/sunset palm trees.jpg" alt="beach">
+        <img src="../images/windandsea.jpg" alt="beach">
     </div>
 </div>
