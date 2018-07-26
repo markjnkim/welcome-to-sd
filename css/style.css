@@ -191,7 +191,13 @@ a:active {
 }
 
 a.glow:hover,
-a.glow:active,
+a.glow:active {
+  background-color: orangered;
+  color: white;
+}
 a.glow:focus {
   background-color: orange;
+}
+a#hvr-red:hover {
+  color: orangered;
 }
