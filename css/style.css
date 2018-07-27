@@ -169,7 +169,7 @@ img#down_size {
 }
 
 a:active {
-  background-color: gold;
+  background-color: white;
 }
 
 /* Grow */
@@ -197,6 +197,7 @@ a.glow:active {
 }
 a.glow:focus {
   background-color: orange;
+  color: orangered;
 }
 a#hvr-red:hover {
   color: orangered;
@@ -207,5 +208,25 @@ button:hover {
 }
 
 a#tips:hover {
-  text:orange;
+  color:orangered;
+}
+
+a#tips {
+  color: black;
+  
+}
+
+nav ul {
+  width: 800px;
+  float: right;
+}
+
+#large_icon {
+  width: 180px;
+  height: auto;
+}
+
+#map_img {
+  width: 300px;
+  height: 200px;
 }

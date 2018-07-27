@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready( () => {
   $('.materialboxed').materialbox();
   // $('.button-collapse').sideNav({
   //     menuWidth: 300,
@@ -9,38 +9,43 @@ $(document).ready(function () {
   // Slide Grocery List Responsive to screen size break 800px
   $('div#grocery_list_s').hide();
   $('div#grocery_list_b').hide();
-  $('a#grocery').click(toggleList);
-
+  $('a#grocery').click( () => {
+    if ($(window).width() <= 800) {
+      $('div#grocery_list_b').hide();
+      $('div#grocery_list_s').slideToggle();
+    } else {
+      $('div#grocery_list_s').hide();
+      $('div#grocery_list_b').slideToggle();
+    }
+  }
+    
+  );
+  // Slide Tips List in policy.hbs
   $('#tip-list').hide();
-  $('#tips').click(toggleTips);
+  $('#tips').click( () => {
+    $('#tip-list').slideToggle();
+  });
 
-  $('#hvr-red').click(showTip);
 
 });
+ // Slide Tips List in policy.hbs
+// function toggleTips() {
+//   $('#tip-list').slideToggle();
+// }
 
-function showTip() {
-  $('#tip-list').show();
-}
-function toggleTips() {
-  $('#tip-list').slideToggle();
-}
 
-function toggleTip() {
-  $('div#tip').slideToggle();
-}
-function toggleList() {
-  if ($(window).width() <= 800) {
-    $('div#grocery_list_b').hide();
-    $('div#grocery_list_s').slideToggle();
-  } else {
-    $('div#grocery_list_s').hide();
-    $('div#grocery_list_b').slideToggle();
-  }
-}
-
+// function toggleList() {
+//   if ($(window).width() <= 800) {
+//     $('div#grocery_list_b').hide();
+//     $('div#grocery_list_s').slideToggle();
+//   } else {
+//     $('div#grocery_list_s').hide();
+//     $('div#grocery_list_b').slideToggle();
+//   }
+// }
 
 // Nav bar link animation
-$('.head-link').click(function (e) {
+$('.head-link').click( (e) => {
   e.preventDefault();
 
   var goto = $(this).attr('href');

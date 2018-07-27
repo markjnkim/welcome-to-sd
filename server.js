@@ -51,7 +51,7 @@ app.get("/policy", function (req, res) {
 })
 
 app.get("/house-manual", function (req, res) {
-    res.render('house-manual');
+    res.render('house_manual');
 })
 app.get("/local_guide", function (req, res) {
     res.render('local_guide');
