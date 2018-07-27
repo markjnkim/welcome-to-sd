@@ -169,7 +169,7 @@ img#down_size {
 }
 
 a:active {
-  background-color: gold;
+  background-color: white;
 }
 
 /* Grow */
@@ -191,7 +191,42 @@ a:active {
 }
 
 a.glow:hover,
-a.glow:active,
+a.glow:active {
+  background-color: orangered;
+  color: white;
+}
 a.glow:focus {
   background-color: orange;
+  color: orangered;
+}
+a#hvr-red:hover {
+  color: orangered;
+}
+
+button:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
+a#tips:hover {
+  color:orangered;
+}
+
+a#tips {
+  color: black;
+  
+}
+
+nav ul {
+  width: 800px;
+  float: right;
+}
+
+#large_icon {
+  width: 180px;
+  height: auto;
+}
+
+#map_img {
+  width: 300px;
+  height: 200px;
 }

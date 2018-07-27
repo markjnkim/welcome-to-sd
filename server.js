@@ -50,8 +50,15 @@ app.get("/policy", function (req, res) {
     res.render('policy');
 })
 
+app.get("/house-manual", function (req, res) {
+    res.render('house_manual');
+})
 app.get("/local_guide", function (req, res) {
     res.render('local_guide');
+})
+
+app.get("/contact_us", function (req, res) {
+    res.render('contact_us');
 })
 
 app.get("*", function (req, res) {
