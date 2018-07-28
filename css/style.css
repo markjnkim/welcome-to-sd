@@ -163,9 +163,9 @@ a.grocery-anchor {
   visibility: hidden;
 }
 
-img#down_size {
-  width: 60%;
-  height: 60%;
+#down_size {
+  width: 50%;
+  height: 50%;
 }
 
 a:active {
@@ -229,4 +229,8 @@ nav ul {
 #map_img {
   width: 300px;
   height: 200px;
+}
+
+.card-height {
+  height: 403px;
 }
