@@ -241,3 +241,7 @@ nav ul {
 .card-height {
   height: 403px;
 }
+
+h5#quote:hover {
+  -webkit-text-fill-color: rgb(245, 241, 4);
+}

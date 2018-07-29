@@ -26,6 +26,10 @@ $(document).ready( () => {
     $('#tip-list').slideToggle();
   });
 
+  $('#tips').click( () => {
+    $('#tip-list').css("border", "3px solid red");
+  });
+
 
 });
  // Slide Tips List in policy.hbs
