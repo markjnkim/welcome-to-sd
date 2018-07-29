@@ -27,27 +27,12 @@ $(document).ready( () => {
   });
 
   $('#motips').click( () => {
-    // $('#tip-list').css("border", "3px solid red");
+  // $('#tip-list').css("border", "3px solid red");
       $('#tip-list').show();
   });
 
 
 });
- // Slide Tips List in policy.hbs
-// function toggleTips() {
-//   $('#tip-list').slideToggle();
-// }
-
-
-// function toggleList() {
-//   if ($(window).width() <= 800) {
-//     $('div#grocery_list_b').hide();
-//     $('div#grocery_list_s').slideToggle();
-//   } else {
-//     $('div#grocery_list_s').hide();
-//     $('div#grocery_list_b').slideToggle();
-//   }
-// }
 
 // Nav bar link animation
 $('.head-link').click( (e) => {
