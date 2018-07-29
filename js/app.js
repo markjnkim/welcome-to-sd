@@ -26,8 +26,9 @@ $(document).ready( () => {
     $('#tip-list').slideToggle();
   });
 
-  $('#tips').click( () => {
-    $('#tip-list').css("border", "3px solid red");
+  $('#motips').click( () => {
+    // $('#tip-list').css("border", "3px solid red");
+      $('#tip-list').show();
   });
 
 
