@@ -20,7 +20,7 @@ var app = express();
 var exphbs= require('express-handlebars');
 
 // Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 1337;
+var PORT = process.env.PORT || 8080;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
