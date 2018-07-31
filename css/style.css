@@ -214,11 +214,11 @@ button:hover {
   box-shadow: 10px 10px 5px grey;
 }
 
-a#tips:hover {
+#tips:hover {
   color:orangered;
 }
 
-a#tips {
+#tips {
   color: black;
   
 }
@@ -249,4 +249,17 @@ h5#quote:hover {
 .card-width-min {
   min-width: 150px;
   position: relative;
+}
+
+.img-push-right {
+  padding: 0 0 0 12%;
+}
+
+#er {
+  color: red;
+  font-size: 110%;
+}
+
+.card-min-height {
+  min-height: 300px
 }
