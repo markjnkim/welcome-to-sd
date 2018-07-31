@@ -26,6 +26,12 @@ $(document).ready( () => {
     $('#tip-list').slideToggle();
   });
 
+  // Slide Tips List in policy.hbs
+  $('#emergency-card').hide();
+  $('#emergency').click( () => {
+    $('#emergency-card').slideToggle();
+  });
+
   $('#motips').click( () => {
   // $('#tip-list').css("border", "3px solid red");
       $('#tip-list').show();
