@@ -25,6 +25,7 @@ $('#tips').click( () => {
 
 // Slide Tips List in policy.hbs
 $('#emergency-card').hide();
+// $('#house-img').hide();
 $('#emergency').click( () => {
   $('#emergency-card').slideToggle();
   $('#house-img').slideToggle();
