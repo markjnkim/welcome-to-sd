@@ -279,7 +279,9 @@ a.hvr-red:hover {
   position: relative;
 }
 
-
+#img-max-height {
+  max-height: 20% !important;
+}
 
 /* .card { height:400px;}
 
