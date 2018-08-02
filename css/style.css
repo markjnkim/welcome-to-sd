@@ -206,7 +206,7 @@ a.glow:focus {
   background-color: orange;
   color: orangered;
 }
-a#hvr-red:hover {
+a.hvr-orange-red:hover {
   color: orangered;
 }
 
@@ -283,6 +283,14 @@ a.hvr-red:hover {
   max-height: 20% !important;
 }
 
+section.header {
+  background-color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+/* #policy-bg {
+background-image: url("images/cali_sunset_pier.jpg")
+} */
 /* .card { height:400px;}
 
 
