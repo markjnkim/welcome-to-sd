@@ -1,5 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
-    var Message = sequelize.define("Message", {
+    var Message = sequelize.define("Message", 
+    {
         firstName: {
             type: DataTypes.STRING(255),
             allowNull: false,
@@ -21,6 +22,14 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
             validate: {
                 len: [3]
+            }
+        },
+        email: {
+            type: DataTypes.STRING(255),
+            allowNull: false,
+            validate: {
+                len: [3],
+                isEmail: true
             }
         },
         subject: {
