@@ -6,8 +6,8 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
 var bodyParser = require("body-parser");
-var path = require("path");
-var nodemailer = require("nodemailer");
+// var path = require("path");
+// var nodemailer = require("nodemailer");
 
 
 // ==============================================================================
@@ -27,11 +27,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Static files with Express 
-app.use('/images', express.static(__dirname + '/images'));
-app.use('/css', express.static(__dirname + '/css'));
-app.use('/js', express.static(__dirname + '/js'));
+app.use('/assets', express.static(__dirname + '/assets'));
+// app.use('/css', express.static(__dirname + '/css'));
+// app.use('/js', express.static(__dirname + '/js'));
 
-// Register `hbs.engine with the Express app
+// Config express handlebars `hbs.engine with the Express app
 app.engine('.hbs', exphbs({
     defaultLayout:  'main',
     extname:        '.hbs', 
@@ -40,62 +40,11 @@ app.engine('.hbs', exphbs({
 }));
 app.set('view engine', '.hbs'); 
 
-// var hbs = exphbs.create({ /*config */ });
-// ================================================================================
-// ROUTER
-// The below points our server to a series of "route" files.
-// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-// ================================================================================
-app.get("/policy", function (req, res) {
-    res.render('policy');
-})
-
-app.get("/house_manual", function (req, res) {
-    res.render('house_manual');
-})
-app.get("/local_guide", function (req, res) {
-    res.render('local_guide');
-})
-
-app.get("/contact_us", function (req, res) {
-    res.render('contact_us');
-})
-
-app.get("*", function (req, res) {
-    res.render('home');
-})
-
-// POST route from contact form
-app.post('/index', function (req, res) {
-    let mailOpts, smtpTrans;
-    smtpTrans = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
-        auth: {
-            user: GMAIL_USER,
-            pass: GMAIL_PASS
-        }
-    });
-    mailOpts = {
-        from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-        to: GMAIL_USER,
-        subject: 'New message from contact form at guide-san-diego',
-        text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-    };
-    smtpTrans.sendMail(mailOpts, function (error, response) {
-        if (error) {
-            res.render('contact-failure');
-        }
-        else {
-            res.render('contact-success');
-        }
-    });
-});
 // =============================================================================
 // LISTENER
 // The below code effectively "starts" our server
 // =============================================================================
+require("./controllers/html-routes.js")(app);
 
 app.listen(PORT, function () {
     console.log("App listening on PORT: " + PORT);
