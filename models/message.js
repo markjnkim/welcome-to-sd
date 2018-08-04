@@ -1,35 +1,10 @@
 module.exports = function (sequelize, DataTypes) {
-    var Message = sequelize.define("Message", 
-    {
-        firstName: {
+    var Message = sequelize.define("Message", {
+        body: {
             type: DataTypes.STRING(255),
             allowNull: false,
             validate: {
-                len: [2],
-                isAlpha: true
-            }
-        },
-        lastName: {
-            type: DataTypes.STRING(255),
-            allowNull: false,
-            validate: {
-                len: [2],
-                isAlpha: true
-            }
-        },
-        message: {
-            type: DataTypes.STRING(255),
-            allowNull: false,
-            validate: {
-                len: [3]
-            }
-        },
-        email: {
-            type: DataTypes.STRING(255),
-            allowNull: false,
-            validate: {
-                len: [3],
-                isEmail: true
+                len: [1]
             }
         },
         subject: {
@@ -38,11 +13,33 @@ module.exports = function (sequelize, DataTypes) {
             validate: {
                 len: [1]
             }
+        },
+        response: {
+            type: DataTypes.STRING(255),
+            allowNull: true,
+            validate: {
+                len: [1],
+            }
+        },
+        response_type: {
+            type: DataTypes.STRING(255),
+            allowNull: true,
+            defaultValue: "email",
+            validate: {
+                len: [1],
+                isAlpha: true,
+            }
         }
-
     }, {
             timestamps: true
         });
-        
+
+        // Messages have one author
+        Message.associate = models => {
+            Message.belongsTo(models.Author, {
+                onDelete: "cascade"
+            });
+        };
+
     return Message;
 };
