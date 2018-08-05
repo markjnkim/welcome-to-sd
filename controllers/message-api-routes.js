@@ -2,10 +2,11 @@
 var db = require("../models");
 
 module.exports = app => {
-    // Get route for getting all the messages 
+    // Get route for getting all the messages from an author
     // Index of messages
     app.get("/api/messages", (req, res) => {
         var query = {};
+        console.log(res);
         if (req.query.author_id) {
             query.AuthorId = req.query.author_id;
         }

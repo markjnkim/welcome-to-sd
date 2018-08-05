@@ -3,20 +3,22 @@ module.exports = (sequelize, DataTypes) => {
         // Giving the Author model a name of type STRING
         first_name: {
             type: DataTypes.STRING(255),
-            allowNull: false,
-            validate: {
-                len: [1],
-                isAlpha:true
-            }
+            // allowNull: false,
+            // validate: {
+            //     len: [1],
+            //     isAlpha:true
+            // }
         },
         last_name: {
             type: DataTypes.STRING(255),
-            allowNull: false,
-            validate: {
-                len: [2],
-                isAlpha:true
-            }
+            // allowNull: false,
+            // validate: {
+            //     len: [2],
+            //     isAlpha:true
+            // }
         }
+    },{
+        timestamps: false
     });
 
     Author.associate = models => {
