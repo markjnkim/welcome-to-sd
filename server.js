@@ -19,7 +19,7 @@ var bodyParser = require("body-parser");
 var app = express();
 
 // Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 8000;
+var PORT = process.env.PORT || 8080;
 
 var db = require("./models");
 
@@ -52,7 +52,7 @@ require("./controllers/message-api-routes")(app);
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync({ force: false }).then(function() {
     app.listen(PORT, function () {
         console.log("App listening on PORT: " + PORT);
     });

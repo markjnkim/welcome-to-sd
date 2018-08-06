@@ -1,10 +1,10 @@
 // Requiring models
 var db = require("../models");
 
-module.exports = app => {
+module.exports = function(app) {
 	// Get route for getting all the messages from an author
 	// Index of messages
-	app.get("/api/messages", (req, res) => {
+	app.get("/api/messages", function(req, res) {
 		var query = {};
 		console.log(res);
 		if (req.query.author_id) {
@@ -13,48 +13,48 @@ module.exports = app => {
 		db.Message.findAll({
 			where: query,
 			include: [db.Author],
-		}).then(dbMessage => {
+		}).then(function(dbMessage) {
 			res.json(dbMessage);
 		});
 	});
 
-	app.get("/api/messages/:id", (req, res) => {
+	app.get("/api/messages/:id", function(req, res) {
 		// Show single message in detail
 		db.Message.findOne({
 			where: {
 				id: req.params.id
 			},
 			include: [db.Author]
-		}).then(dbMessage => {
+		}).then(function(dbMessage) {
 			res.json(dbMessage);
 		});
 	});
 
-	app.post("/api/messages", (req, res) => {
+	app.post("/api/messages", function(req, res) {
 		// Create Message
-		db.Message.create(req.body).then(dbMessage => {
+		db.Message.create(req.body).then( function(dbMessage) {
 			res.json(dbMessage);
 		});
 	});
 
-	app.delete("/api/messages/:id", (req, res) => {
+	app.delete("/api/messages/:id", function(req, res) {
 		db.Message.destroy({
 			where: {
 				id: req.params.id
 			}
-		}).then(dbMessage => {
+		}).then(function(dbMessage) {
 			res.json(dbMessage);
 		});
 	});
 
-	app.put("/api/messages", (req, res) => {
+	app.put("/api/messages", function(req, res) {
 		db.Message.update(
 			req.body,
 			{
 				where: {
 					id: req.body.id
 				}
-			}).then(dbMessage => {
+			}).then(function(dbMessage) {
 				res.json(dbMessage);
 			});
 	});

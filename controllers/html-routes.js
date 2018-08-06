@@ -23,6 +23,10 @@ module.exports = function (app) {
 		res.render('contact');
 	})
 
+	app.get("/messages", function (req, res) {
+		res.render('messages');
+	})
+
 	app.get("*", function (req, res) {
 		res.render('home');
 	})
