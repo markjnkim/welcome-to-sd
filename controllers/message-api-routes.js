@@ -1,5 +1,6 @@
 // Requiring models
 var db = require("../models");
+var table = require("console.table")
 
 module.exports = function(app) {
 	// Get route for getting all the messages from an author
@@ -27,6 +28,13 @@ module.exports = function(app) {
 			include: [db.Author]
 		}).then(function(dbMessage) {
 			res.json(dbMessage);
+		});
+	});
+
+	app.get("/api/messages/all", function(req, res) {
+		// Get all messages
+		db.Message.findAll().then(function(dbMessage) {
+			console.table(dbMessage);
 		});
 	});
 
