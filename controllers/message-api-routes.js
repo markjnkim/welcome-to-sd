@@ -18,6 +18,13 @@ module.exports = function(app) {
 			res.json(dbMessage);
 		});
 	});
+	
+	app.get("/api/messages/all", function(req, res) {
+		// Get all messages
+		db.Message.findAll().then(function(dbMessage) {
+			console.table(dbMessage);
+		});
+	});
 
 	app.get("/api/messages/:id", function(req, res) {
 		// Show single message in detail
@@ -31,12 +38,6 @@ module.exports = function(app) {
 		});
 	});
 
-	app.get("/api/messages/all", function(req, res) {
-		// Get all messages
-		db.Message.findAll().then(function(dbMessage) {
-			console.table(dbMessage);
-		});
-	});
 
 	app.post("/api/messages", function(req, res) {
 		// Create Message
