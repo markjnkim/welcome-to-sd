@@ -1,8 +1,8 @@
-$(document).ready( () => {
+$(document).ready( function() {
   // Slide Grocery List Responsive to screen size break 800px
   $('div#grocery_list_s').hide();
   $('div#grocery_list_b').hide();
-  $('a#grocery').click( () => {
+  $('a#grocery').click( function() {
     // Small Screen
     if ($(window).width() <= 550) {
       $('div#grocery_list_b').hide();
@@ -19,19 +19,19 @@ $(document).ready( () => {
 );
 // Slide Tips List in policy.hbs
 $('#tip-list').hide();
-$('#tips').click( () => {
+$('#tips').click( function() {
   $('#tip-list').slideToggle();
 });
 
 // Slide Tips List in policy.hbs
 $('#emergency-card').hide();
 // $('#house-img').hide();
-$('#emergency').click( () => {
+$('#emergency').click( function() {
   $('#emergency-card').slideToggle();
   $('#house-img').slideToggle();
 });
 
-$('#motips').click( () => {
+$('#motips').click( function() {
   // $('#tip-list').css("border", "3px solid red");
   $('#tip-list').show();
 });
@@ -40,7 +40,7 @@ $('#motips').click( () => {
 });
 
 // Nav bar link animation
-$('.head-link').click( (e) => {
+$('.head-link').click( function(e) {
   e.preventDefault();
   
   var goto = $(this).attr('href');
@@ -61,21 +61,3 @@ $('.head-link').click( (e) => {
 })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 ga('create', 'UA-60673008-2', 'auto');
 ga('send', 'pageview');
-
-
-// // Initialize Firebase
-// var config = {
-  //   apiKey: "AIzaSyCLj1tOhXfmkuTeYTGpWiJUCBCMggln6qU",
-  //   authDomain: "airbnb-sd.firebaseapp.com",
-  //   databaseURL: "https://airbnb-sd.firebaseio.com",
-  //   projectId: "airbnb-sd",
-  //   storageBucket: "airbnb-sd.appspot.com",
-  //   messagingSenderId: "672376233413"
-  // };
-  // firebase.initializeApp(config);
-  
-  // $('.button-collapse').sideNav({
-  //     menuWidth: 300,
-  //     edge: 'right',
-  //     draggable: true
-  // });

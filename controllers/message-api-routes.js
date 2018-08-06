@@ -1,5 +1,6 @@
 // Requiring models
 var db = require("../models");
+var table = require("console.table")
 
 module.exports = function(app) {
 	// Get route for getting all the messages from an author
@@ -17,6 +18,13 @@ module.exports = function(app) {
 			res.json(dbMessage);
 		});
 	});
+	
+	app.get("/api/messages/all", function(req, res) {
+		// Get all messages
+		db.Message.findAll().then(function(dbMessage) {
+			console.table(dbMessage);
+		});
+	});
 
 	app.get("/api/messages/:id", function(req, res) {
 		// Show single message in detail
@@ -29,6 +37,7 @@ module.exports = function(app) {
 			res.json(dbMessage);
 		});
 	});
+
 
 	app.post("/api/messages", function(req, res) {
 		// Create Message
