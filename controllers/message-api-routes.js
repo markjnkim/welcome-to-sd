@@ -1,6 +1,6 @@
 // Requiring models
 var db = require("../models");
-var moment = require("moment");
+// var moment = require("moment");
 
 module.exports = function(app) {
 	// Get route for getting all the messages from an author

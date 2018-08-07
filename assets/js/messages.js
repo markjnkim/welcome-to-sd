@@ -5,7 +5,7 @@ $(document).ready(function () {
   // \Get the data object from database
   
   $.get('/api/messages', function (data) {
-console.log(data);
+// console.log(data);
   // Loop trhough object array for each record
     data.forEach(function (response) {
       $('tbody').append(

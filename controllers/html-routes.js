@@ -30,9 +30,12 @@ module.exports = function (app) {
 	app.get("/", function (req, res) {
 		res.render('home');
 	})
-	app.get("*", function (req, res) {
+	app.get("/home", function (req, res) {
 		res.render('home');
 	})
+	// app.get("*", function (req, res) {
+	// 	res.render('home');
+	// })
 
 	// POST route from contact form
 	// app.post('/index', function (req, res) {
