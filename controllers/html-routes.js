@@ -23,13 +23,13 @@ module.exports = function (app) {
 		res.render('contact');
 	})
 
-	app.get("/messages", function (req, res) {
+	app.get("/6192290143/messages", function (req, res) {
 		res.render('messages');
 	})
 
-	// app.get("*", function (req, res) {
-	// 	res.render('home');
-	// })
+	app.get("/", function (req, res) {
+		res.render('home');
+	})
 
 	// POST route from contact form
 	// app.post('/index', function (req, res) {
