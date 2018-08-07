@@ -26,6 +26,7 @@ $(document).ready(function () {
 
     $.post('/api/messages', newMessage).then(function () {
       alert('Thank you for your message!')
+      $('.modal').modal();
     })
 
     $first_name.val('')

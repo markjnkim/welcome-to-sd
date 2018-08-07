@@ -129,6 +129,7 @@ body {
 #title-header {
   /* font-family: 'Roboto', sans-serif; */
   font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   /* font-family: 'Merriweather', serif; */
   /* font-family: 'Josefin Sans', sans-serif; */
   /* font-family: 'Knewave', cursive; */
@@ -333,3 +334,13 @@ and (max-width : 767px) {
 
       .input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=url]:focus + label, .input-field input[type=date]:focus + label, .input-field input[type=tel]:focus + label, .input-field input[type=number]:focus + label, .input-field input[type=search]:focus + label, .input-field textarea:focus.materialize-textarea + label {
         color: orangered; }
+
+#card-info {
+  padding-top: 30px;
+  max-height: 210px;
+  font-weight: bolder;
+}        
+
+.pad-left-30 {
+  padding-left: 30px;
+}
