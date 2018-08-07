@@ -10,15 +10,13 @@ console.log(data);
     data.forEach(function (response) {
       $('tbody').append(
         '<tr><td>' +
-          response.Author.first_name +
+          response.first_name +
           '</td><td>' +
-          response.Author.last_name +
+          response.last_name +
           '</td><td>' +
           response.subject +
           '</td><td>' +
           response.body +
-          '</td><td>' +
-          response.AuthorId +
           '</td><td>' +
           response.id +
           '</td><td>' +

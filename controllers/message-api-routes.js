@@ -9,7 +9,7 @@ module.exports = function(app) {
 		var query = {};
 		// console.log(res);
 		db.Message.findAll({
-			include: [db.Author]
+			// include: [db.Author]
 		})
 		.then(function(dbMessage) {
 			res.json(dbMessage);
@@ -26,21 +26,12 @@ module.exports = function(app) {
 		// });
 	});
 	
-	app.get("/api/messages/all", function(req, res) {
-		// Get all messages
-		db.Message.findAll().then(function(dbMessage) {
-			console.table(dbMessage);
-			res.json(dbMessage);
-		});
-	});
-
 	app.get("/api/messages/:id", function(req, res) {
 		// Show single message in detail
 		db.Message.findOne({
 			where: {
 				id: req.params.id
-			},
-			include: [db.Author]
+			}
 		}).then(function(dbMessage) {
 			res.json(dbMessage);
 		});

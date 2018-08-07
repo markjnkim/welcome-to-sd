@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = function(sequelize, DataTypes) {
     var Author = sequelize.define("Author", {
         // Giving the Author model a name of type STRING
         first_name: {
@@ -21,13 +21,13 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     });
 
-    Author.associate = models => {
-        // Associateing Author to Messages
-        // When an Author is deleted, also delete any associated Messages
-        Author.hasMany(models.Message, {
-            onDelete: "cascade"
-        });
-    };
+    // Author.associate = models => {
+    //     // Associateing Author to Messages
+    //     // When an Author is deleted, also delete any associated Messages
+    //     Author.hasMany(models.Message, {
+    //         onDelete: "cascade"
+    //     });
+    // };
 
     return Author;
 };

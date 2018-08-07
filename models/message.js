@@ -20,17 +20,32 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [1]
       }
+    },
+    first_name: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+      validate: {
+        len: [1]
+      }
+    },
+    last_name: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+      validate: {
+        len: [1]
+      }
     }
+
   }, {
       timestamps: false
     });
 
   // Messages have one author
-  Message.associate = function(models) {
-    Message.belongsTo(models.Author, {
-      onDelete: "cascade"
-    });
-  };
+  // Message.associate = function(models) {
+  //   Message.belongsTo(models.Author, {
+  //     onDelete: "cascade"
+  //   });
+  // };
 
   return Message;
 };
