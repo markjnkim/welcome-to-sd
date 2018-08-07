@@ -1,28 +1,36 @@
 // Requiring models
 var db = require("../models");
-var table = require("console.table")
+var moment = require("moment");
 
 module.exports = function(app) {
 	// Get route for getting all the messages from an author
 	// Index of messages
 	app.get("/api/messages", function(req, res) {
 		var query = {};
-		console.log(res);
-		if (req.query.author_id) {
-			query.AuthorId = req.query.author_id;
-		}
+		// console.log(res);
 		db.Message.findAll({
-			where: query,
-			include: [db.Author],
-		}).then(function(dbMessage) {
+			include: [db.Author]
+		})
+		.then(function(dbMessage) {
 			res.json(dbMessage);
 		});
+	
+		// if (req.query.author_id) {
+		// 	query.AuthorId = req.query.author_id;
+		// }
+		// db.Message.findAll({
+		// 	where: query,
+		// 	include: [db.Author],
+		// }).then(function(dbMessage) {
+		// 	res.json(dbMessage);
+		// });
 	});
 	
 	app.get("/api/messages/all", function(req, res) {
 		// Get all messages
 		db.Message.findAll().then(function(dbMessage) {
 			console.table(dbMessage);
+			res.json(dbMessage);
 		});
 	});
 

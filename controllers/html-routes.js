@@ -27,35 +27,35 @@ module.exports = function (app) {
 		res.render('messages');
 	})
 
-	app.get("*", function (req, res) {
-		res.render('home');
-	})
+	// app.get("*", function (req, res) {
+	// 	res.render('home');
+	// })
 
 	// POST route from contact form
-	app.post('/index', function (req, res) {
-		let mailOpts, smtpTrans;
-		smtpTrans = nodemailer.createTransport({
-			host: 'smtp.gmail.com',
-			port: 465,
-			secure: true,
-			auth: {
-				user: GMAIL_USER,
-				pass: GMAIL_PASS
-			}
-		});
-		mailOpts = {
-			from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-			to: GMAIL_USER,
-			subject: 'New message from contact form at guide-san-diego',
-			text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-		};
-		smtpTrans.sendMail(mailOpts, function (error, response) {
-			if (error) {
-				res.render('contact-failure');
-			}
-			else {
-				res.render('contact-success');
-			}
-		});
-	});
+	// app.post('/index', function (req, res) {
+	// 	let mailOpts, smtpTrans;
+	// 	smtpTrans = nodemailer.createTransport({
+	// 		host: 'smtp.gmail.com',
+	// 		port: 465,
+	// 		secure: true,
+	// 		auth: {
+	// 			user: GMAIL_USER,
+	// 			pass: GMAIL_PASS
+	// 		}
+	// 	});
+	// 	mailOpts = {
+	// 		from: req.body.name + ' &lt;' + req.body.email + '&gt;',
+	// 		to: GMAIL_USER,
+	// 		subject: 'New message from contact form at guide-san-diego',
+	// 		text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+	// 	};
+	// 	smtpTrans.sendMail(mailOpts, function (error, response) {
+	// 		if (error) {
+	// 			res.render('contact-failure');
+	// 		}
+	// 		else {
+	// 			res.render('contact-success');
+	// 		}
+	// 	});
+	// });
 }
