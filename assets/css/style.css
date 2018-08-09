@@ -269,6 +269,8 @@ a.hvr-red:hover {
   background-color: yellow;
 }
 
+.btn-large {border-radius: 8px;}
+
 .card.medium {
   height: auto;
 }
@@ -302,6 +304,15 @@ section.header {
 .margin-top-0 {
   margin-top: 0px;
 }
+.margin-top-n30 {
+  margin-top: -30px;
+}
+.margin-top-n20 {
+  margin-top: -20px;
+}
+.padding-bottom-40 {
+  padding-top: 40px;
+}
 
 /* #policy-bg {
 background-image: url("images/cali_sunset_pier.jpg")
@@ -333,3 +344,4 @@ and (max-width : 767px) {
 
       .input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=url]:focus + label, .input-field input[type=date]:focus + label, .input-field input[type=tel]:focus + label, .input-field input[type=number]:focus + label, .input-field input[type=search]:focus + label, .input-field textarea:focus.materialize-textarea + label {
         color: orangered; }
+
