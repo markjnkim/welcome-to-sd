@@ -15,13 +15,13 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, 0.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -31,13 +31,12 @@ p {
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
     min-width: 508px;
   }
 }
-
 
 .icon-block {
   padding: 0 15px;
@@ -47,52 +46,43 @@ footer.page-footer {
   margin: 0;
 }
 
-
-
-
- .parallax img 
- {
- 	 background-repeat: no-repeat;
- 	 background-size: cover;
- }
- .parallax-container
- {
- 	color: black;
- }
- @media only screen and (max-width : 600px) {
-  .parallax-container
- {
- 	color: white;
- }
+.parallax img {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
- nav a.button-collapse
- {
- 	color:black;
- }
- .purple.lighten-1 {
-  background-color: #CC0066 !important;
+.parallax-container {
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .parallax-container {
+    color: white;
+  }
+}
+nav a.button-collapse {
+  color: black;
+}
+.purple.lighten-1 {
+  background-color: #cc0066 !important;
 }
 .teal-text.text-lighten-2 {
-  color: #CC0066 !important;
+  color: #cc0066 !important;
 }
-.share-buttons{
-	list-style: none;
+.share-buttons {
+  list-style: none;
 }
 
-.share-buttons li{
-	display: inline;
+.share-buttons li {
+  display: inline;
 }
-nav
-{
-	overflow: visible;
+nav {
+  overflow: visible;
 }
 nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 #lockbox {
-  
 }
 
 #responsive-img {
@@ -215,12 +205,11 @@ button:hover {
 }
 
 #tips:hover {
-  color:orangered;
+  color: orangered;
 }
 
 #tips {
   color: black;
-  
 }
 
 nav ul {
@@ -269,7 +258,9 @@ a.hvr-red:hover {
   background-color: yellow;
 }
 
-.btn-large {border-radius: 8px;}
+.btn-large {
+  border-radius: 8px;
+}
 
 .card.medium {
   height: auto;
@@ -292,12 +283,12 @@ section.header {
 }
 
 .contain {
-  display:flex;
+  display: flex;
   /* justify-content: center; */
-  flex:1;
-  overflow-y:auto;
-  flex-direction:column;
-  align-items:center;
+  flex: 1;
+  overflow-y: auto;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -312,6 +303,9 @@ section.header {
 }
 .padding-bottom-40 {
   padding-top: 40px;
+}
+.margin-bottom-0 {
+  margin-bottom: 0;
 }
 
 /* #policy-bg {
@@ -333,15 +327,34 @@ and (max-width : 767px) {
 } */
 
 .input-field textarea:focus.materialize-textarea + label {
-  color: orangered; }
-  .input-field .prefix.active {
-    color: orangered; }
-    input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, input[type=search]:focus, textarea:focus.materialize-textarea {
-      border-bottom: 1px solid orangered;
-      -webkit-box-shadow: 0 1px 0 0 orangered;
-      -moz-box-shadow: 0 1px 0 0 orangered;
-      box-shadow: 0 1px 0 0 orangered; }
+  color: orangered;
+}
+.input-field .prefix.active {
+  color: orangered;
+}
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='date']:focus,
+input[type='tel']:focus,
+input[type='number']:focus,
+input[type='search']:focus,
+textarea:focus.materialize-textarea {
+  border-bottom: 1px solid orangered;
+  -webkit-box-shadow: 0 1px 0 0 orangered;
+  -moz-box-shadow: 0 1px 0 0 orangered;
+  box-shadow: 0 1px 0 0 orangered;
+}
 
-      .input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=url]:focus + label, .input-field input[type=date]:focus + label, .input-field input[type=tel]:focus + label, .input-field input[type=number]:focus + label, .input-field input[type=search]:focus + label, .input-field textarea:focus.materialize-textarea + label {
-        color: orangered; }
-
+.input-field input[type='text']:focus + label,
+.input-field input[type='password']:focus + label,
+.input-field input[type='email']:focus + label,
+.input-field input[type='url']:focus + label,
+.input-field input[type='date']:focus + label,
+.input-field input[type='tel']:focus + label,
+.input-field input[type='number']:focus + label,
+.input-field input[type='search']:focus + label,
+.input-field textarea:focus.materialize-textarea + label {
+  color: orangered;
+}
