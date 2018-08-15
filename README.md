@@ -13,6 +13,7 @@ dependencies
   body-parser
 
 ![Alt Text](https://github.com/markjnkim/welcome-to-sd/assets/images/emergency.png)
+![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/beach-hut.jpg)
 
 ### Prerequisites
 
