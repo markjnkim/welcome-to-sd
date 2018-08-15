@@ -12,9 +12,12 @@ dependencies
   express-handlebars
   body-parser
 
-![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/house_manual_emergency.gif)
-![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/home_page-check_in.gif)
-![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif)
+![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/Mission_Trails_Map.pdf)
+![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/beach-hut.jpg)
+![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/cali_sunset_pier.jpg)
+
+![Alt Text](https://github.com/markjnkim/welcome-to-sd/assets/images/house_manual.gif)
+![Alt Text](https://github.com/markjnkim/welcome-to-sd/assets/images/contact_pg.gif)
 
 ### Prerequisites
 
