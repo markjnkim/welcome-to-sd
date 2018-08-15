@@ -11,6 +11,10 @@ dependencies
   sequelize
   express-handlebars
   body-parser
+  
+  <a href="https://github.com/markjnkim/welcome-to-sd/assets/images/house_manual.gif"><img src="https://github.com/markjnkim/welcome-to-sd/assets/images/house_manual.gif" alt="github"/></a>
+  
+  <a href="http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif"><img src="http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif" alt="web address"/></a>
 
 ![kitchen](http://guide-san-diego.herokuapp.com/assets/images/kitchen.jpg)
 ![Beach Hut](http://guide-san-diego.herokuapp.com/assets/images/beach-hut.jpg)
