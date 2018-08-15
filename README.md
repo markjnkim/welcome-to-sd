@@ -1,11 +1,19 @@
 # Airbnb house guide
 
-Web app to assist Airbnb guests with home amenities, policies, and discovery of San Diego's amazing entertainment landscape
+Website used to assist Airbnb guests with home amenities, policies, and discovery of San Diego's amazing entertainment landscape
 
 ## Getting Started
 
 npm install
+dependencies
+  express
+  mysql
+  sequelize
+  express-handlebars
+  body-parser
 
+![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/house_manual_emergency.gif)
+![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/home_page-check_in.gif)
 
 ### Prerequisites
 
@@ -33,26 +41,6 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
@@ -79,7 +67,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License 
 
 ## Acknowledgments
 
