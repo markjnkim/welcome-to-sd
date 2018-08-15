@@ -14,7 +14,7 @@ dependencies
 
 ![kitchen](http://guide-san-diego.herokuapp.com/assets/images/kitchen.jpg)
 ![Beach Hut](http://guide-san-diego.herokuapp.com/assets/images/beach-hut.jpg)
-![Cali Sunset](http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif)
+![house manual](http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif)
 
 ![house manual gif](https://github.com/markjnkim/welcome-to-sd/assets/images/house_manual.gif)
 ![contact gif](https://github.com/markjnkim/welcome-to-sd/assets/images/contact_pg.gif)
