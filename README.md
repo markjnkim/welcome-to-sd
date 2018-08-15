@@ -12,7 +12,7 @@ dependencies
   express-handlebars
   body-parser
 
-![Alt Text](https://github.com/markjnkim/welcome-to-sd/assets/images/home_page-check_in.gif)
+![Alt Text](https://github.com/markjnkim/welcome-to-sd/assets/images/emergency.png)
 
 ### Prerequisites
 
