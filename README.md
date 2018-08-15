@@ -14,6 +14,7 @@ dependencies
 
 ![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/house_manual_emergency.gif)
 ![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/home_page-check_in.gif)
+![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif)
 
 ### Prerequisites
 
