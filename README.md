@@ -12,8 +12,8 @@ dependencies
   express-handlebars
   body-parser
 
-![Alt Text](https://github.com/markjnkim/welcome-to-sd/assets/images/emergency.png)
-![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/beach-hut.jpg)
+![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/house_manual_emergency.gif)
+![Alt Text](http://guide-san-diego.herokuapp.com/assets/images/home_page-check_in.gif)
 
 ### Prerequisites
 
