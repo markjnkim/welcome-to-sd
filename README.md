@@ -20,8 +20,8 @@ dependencies
 ![Beach Hut](http://guide-san-diego.herokuapp.com/assets/images/beach-hut.jpg)
 ![house manual](http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif)
 
-![house manual gif](https://github.com/markjnkim/welcome-to-sd/assets/images/house_manual.gif)
-![contact gif](https://github.com/markjnkim/welcome-to-sd/assets/images/contact_pg.gif)
+![house manual gif](/assets/images/house_manual.gif)
+![contact gif](/assets/images/contact_pg.gif)
 
 ### Prerequisites
 
