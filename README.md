@@ -66,11 +66,11 @@ Now you should have a local copy of the website running in your browser
 * [jQuery](https://jquery.com/)
 
 ## Contributing
-@SwarnaKishore for Materialize Parallax templat
+@SwarnaKishore for Materialize Parallax template
 
 ## Authors
 
-* **Mark Kim** - *work* - [Mark Kim](https://github.com/markjnkim)
+* **Mark Kim** - *more work* - [Mark Kim](https://github.com/markjnkim)
 
 
 ## License
