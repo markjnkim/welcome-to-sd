@@ -4,7 +4,7 @@ A simple guide to assist airbnb guests finding house amenities.  Included is als
 
 ## Getting Started
 ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
-`cd welcome-to-sd`
+`cd welcome-to-sd`/n
 `npm install`
 `nodemon server`
 
