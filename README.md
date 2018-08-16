@@ -1,6 +1,5 @@
 # Airbnb house guide 
 http://guide-san-diego.herokuapp.com/
-![contact gif](/assets/images/contact_pg.gif)
 
 ![home page gif](/assets/images/home_page-check_in.gif)
 
