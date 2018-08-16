@@ -12,6 +12,7 @@ express [![npm version](https://badge.fury.io/js/express.svg)](https://badge.fur
 express-handlebars [![npm version](https://badge.fury.io/js/express-handlebars.svg)](https://badge.fury.io/js/express-handlebars)
 
 mysql2 [![npm version](https://badge.fury.io/js/mysql2.svg)](https://badge.fury.io/js/mysql2)
+body-parser [![npm version](https://badge.fury.io/js/body-parser.svg)](https://badge.fury.io/js/body-parser)
 
 npm install
 dependencies
