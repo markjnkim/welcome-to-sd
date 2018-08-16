@@ -6,6 +6,7 @@ Website used to assist Airbnb guests with home amenities, policies, and discover
 
 [![npm version](https://badge.fury.io/js/express.svg)](https://badge.fury.io/js/express)
 [![npm version](https://badge.fury.io/js/express-handlebars.svg)](https://badge.fury.io/js/express-handlebars)
+[![npm version](https://badge.fury.io/js/mysql2.svg)](https://badge.fury.io/js/mysql2)
 
 npm install
 dependencies
