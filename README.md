@@ -1,10 +1,12 @@
 # Airbnb house guide
 
-Website used to assist Airbnb guests with home amenities, policies, and discovery of San Diego's amazing entertainment landscape
+A simple guide to assist airbnb guests finding house amenities.  Included is also a special section that allows out of towners to experience San Diego as a local with all the hidden parking spots at the beach, hole-in-the-wall gems, and diamonds in the rough that only a local San Diegan could know.  
 
 ## Getting Started
 ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
-
+`cd welcome-to-sd`
+`npm install`
+`nodemon server`
 
 ## Dependencies
 * [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
