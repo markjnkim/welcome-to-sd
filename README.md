@@ -1,14 +1,14 @@
 # Airbnb house guide 
 http://guide-san-diego.herokuapp.com/
-
+home page check in
 ![home page gif](/assets/images/home_page-check_in.gif)
-
+house manual
 ![house manual gif](/assets/images/house_manual.gif)
-
+emergency
 ![house manual emergency gif](/assets/images/house_manual_emergency.gif)
-
+local guide
 ![local guide gif](/assets/images/local_guide.gif)
-
+mobile
 ![mobile gif](/assets/images/mobile.gif)
 
 A simple guide to assist Airbnb guests:
