@@ -5,14 +5,14 @@ Website used to assist Airbnb guests with home amenities, policies, and discover
 ## Getting Started
 ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
 
-[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 
-express [![npm version](https://badge.fury.io/js/express.svg)](https://badge.fury.io/js/express)
-
-express-handlebars [![npm version](https://badge.fury.io/js/express-handlebars.svg)](https://badge.fury.io/js/express-handlebars)
-
-mysql2 [![npm version](https://badge.fury.io/js/mysql2.svg)](https://badge.fury.io/js/mysql2)
-body-parser [![npm version](https://badge.fury.io/js/body-parser.svg)](https://badge.fury.io/js/body-parser)
+## Dependencies
+* [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+* express [![npm version](https://badge.fury.io/js/express.svg)](https://badge.fury.io/js/express)
+* express-handlebars [![npm version](https://badge.fury.io/js/express-handlebars.svg)](https://badge.fury.io/js/express-handlebars)
+* mysql2 [![npm version](https://badge.fury.io/js/mysql2.svg)](https://badge.fury.io/js/mysql2)
+* body-parser [![npm version](https://badge.fury.io/js/body-parser.svg)](https://badge.fury.io/js/body-parser)
+* 
 
 npm install
 dependencies
