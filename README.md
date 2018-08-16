@@ -3,13 +3,15 @@
 Website used to assist Airbnb guests with home amenities, policies, and discovery of San Diego's amazing entertainment landscape
 
 ## Getting Started
+![build passing](https://raw.githubusercontent.com/dwyl/repo-badges/master/highresPNGs/build-passing.png)
+
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 
-express[![npm version](https://badge.fury.io/js/express.svg)](https://badge.fury.io/js/express)
+express [![npm version](https://badge.fury.io/js/express.svg)](https://badge.fury.io/js/express)
 
-express-handlebars[![npm version](https://badge.fury.io/js/express-handlebars.svg)](https://badge.fury.io/js/express-handlebars)
+express-handlebars [![npm version](https://badge.fury.io/js/express-handlebars.svg)](https://badge.fury.io/js/express-handlebars)
 
-mysql2[![npm version](https://badge.fury.io/js/mysql2.svg)](https://badge.fury.io/js/mysql2)
+mysql2 [![npm version](https://badge.fury.io/js/mysql2.svg)](https://badge.fury.io/js/mysql2)
 
 npm install
 dependencies
