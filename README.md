@@ -3,7 +3,7 @@
 Website used to assist Airbnb guests with home amenities, policies, and discovery of San Diego's amazing entertainment landscape
 
 ## Getting Started
-![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://travis-ci.org/dwyl/esta)
+![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
 
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 
