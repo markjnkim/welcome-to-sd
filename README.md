@@ -1,9 +1,20 @@
 # Airbnb house guide
 
-A simple guide to assist airbnb guests finding house amenities.  Included is also a special section that allows out of towners to experience San Diego as a local with all the hidden parking spots at the beach, hole-in-the-wall gems, and diamonds in the rough that only a local San Diegan could know.  
+A simple guide to assist Airbnb guests:
 
-## Getting Started
+* Self-Check in Process
+* House policies
+* House amenities
+* Common questions
+* Emergency contacts
+* How to get around
+
+
+Also included is a special section that allows guests special insights to my San Diego favorites including hidden beach parking spots, hole-in-the wall treats, and must try delectable foodie delights.
+
+
 ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
+
 `cd welcome-to-sd`
 
 `npm install`
@@ -12,11 +23,12 @@ A simple guide to assist airbnb guests finding house amenities.  Included is als
 
 ## Dependencies
 * [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
-* express [![npm version](https://badge.fury.io/js/express.svg)](https://badge.fury.io/js/express)
+* express            [![npm version](https://badge.fury.io/js/express.svg)](https://badge.fury.io/js/express)
 * express-handlebars [![npm version](https://badge.fury.io/js/express-handlebars.svg)](https://badge.fury.io/js/express-handlebars)
-* mysql2 [![npm version](https://badge.fury.io/js/mysql2.svg)](https://badge.fury.io/js/mysql2)
-* body-parser [![npm version](https://badge.fury.io/js/body-parser.svg)](https://badge.fury.io/js/body-parser)
-* 
+* mysql2             [![npm version](https://badge.fury.io/js/mysql2.svg)](https://badge.fury.io/js/mysql2)
+* body-parser        [![npm version](https://badge.fury.io/js/body-parser.svg)](https://badge.fury.io/js/body-parser)
+* sequelize          [![npm version](https://badge.fury.io/js/sequelize.svg)](https://badge.fury.io/js/sequelize)
+* sequelize-cli      [![npm version](https://badge.fury.io/js/sequelize-cli.svg)](https://badge.fury.io/js/sequelize-cli)
 
 npm install
 dependencies
