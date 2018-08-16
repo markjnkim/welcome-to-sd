@@ -51,9 +51,8 @@ dependencies
   
   <a href="http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif"><img src="http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif" alt="web address"/></a>
 
-![kitchen](http://guide-san-diego.herokuapp.com/assets/images/kitchen.jpg)
-![Beach Hut](http://guide-san-diego.herokuapp.com/assets/images/beach-hut.jpg)
-![house manual](http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif)
+
+![house manual](/assets/images/house_manual.gif)
 
 ![house manual gif](/assets/images/house_manual.gif)
 ![contact gif](/assets/images/contact_pg.gif)
