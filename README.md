@@ -60,10 +60,10 @@ Now you should have a local copy of the website running in your browser
 
 ## Built With
 
-* [Express](http://www.dropwizard.io/1.0.2/docs/) 
-* [mysql](https://mysql.com) - Dependency Management
-* [Materialize](https://materialize.css.com/) - Used to generate RSS Feeds
-* [jQuery](https://jquery.com/)
+* [Express](http://www.dropwizard.io/1.0.2/docs/) - Router
+* [mysql](https://mysql.com) - Database
+* [Materialize](https://materialize.css.com/) - CSS Framework
+* [jQuery](https://jquery.com/) - Javascript Library
 
 ## Contributing
 @SwarnaKishore for Materialize Parallax template
