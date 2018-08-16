@@ -1,5 +1,6 @@
 # Airbnb house guide 
 http://guide-san-diego.herokuapp.com/
+![house manual gif](/assets/images/house_manual.gif)
 
 A simple guide to assist Airbnb guests:
 
@@ -52,9 +53,7 @@ dependencies
   <a href="http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif"><img src="http://guide-san-diego.herokuapp.com/assets/images/house_manual.gif" alt="web address"/></a>
 
 
-![house manual](/assets/images/house_manual.gif)
 
-![house manual gif](/assets/images/house_manual.gif)
 ![contact gif](/assets/images/contact_pg.gif)
 
 ### Prerequisites
