@@ -1,24 +1,22 @@
 # Airbnb house guide 
-http://guide-san-diego.herokuapp.com/
-home page check in
-![home page gif](/assets/images/home_page-check_in.gif)
-house manual
+![home page gif](/assets/images/homepage.gif)
+A mobile responsive full stack web application that assists Airbnb guests to utilize house amenities, understand house policies, and guide to local hot spots.
+
+This full stack node.js app using express, express-handlebars and mysql.
+
+Here are some screen shots of the use of Materialize's cards and jQuery.
 ![house manual gif](/assets/images/house_manual.gif)
-emergency
-![house manual emergency gif](/assets/images/house_manual_emergency.gif)
+
 local guide
-![local guide gif](/assets/images/local_guide.gif)
+![local guide gif](/assets/images/localguide.gif)
+
+
+Mobile responsive design allows complete use of the website on any cell phone or tablet.
 mobile
 ![mobile gif](/assets/images/mobile.gif)
 
-A simple guide to assist Airbnb guests:
+![mobile gif](/assets/images/mobileresponsive.gif)
 
-* Self-Check in Process
-* House policies
-* House amenities
-* Common questions
-* Emergency contacts
-* How to get around
 
 
 Also included is a special section that allows guests special insights to my San Diego favorites including hidden beach parking spots, hole-in-the wall treats, and must try delectable foodie delights.
