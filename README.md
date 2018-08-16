@@ -12,7 +12,7 @@ A simple guide to assist Airbnb guests:
 
 Also included is a special section that allows guests special insights to my San Diego favorites including hidden beach parking spots, hole-in-the wall treats, and must try delectable foodie delights.
 
-To view the deployed site please click ![here](http://guide-san-diego.herokuapp.com)
+To view the deployed site please click ![here](http://guide-san-diego.herokuapp.com/)
 
 ## Getting Started
 ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
