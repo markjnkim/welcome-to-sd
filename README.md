@@ -1,8 +1,10 @@
 # Airbnb house guide 
 ![home page gif](/assets/images/homepage.gif)
+
+
 A mobile responsive full stack web application that assists Airbnb guests to utilize house amenities, understand house policies, and guide to local hot spots.
 This provides an ability to have an incredible amount of information readily available to your guests.
-This is a fullstack node app using express and mysql on the backend with materialize, jQuery, javascript and css on the front end.
+This is a fullstack node app that uses mysql, express, node.js along with materialize, jQuery, javascript and css on the front end.
 Here are some screen shots of the use of Materialize cards and jQuery methods.
 
 
@@ -28,19 +30,26 @@ Clone the repo
 
 Open the project's root directory
 
-`cd welcome-to-sd`
+```
+cd welcome-to-sd
+```
 
 Use npm to install package dependencies
 
-`npm install`
+```npm install
+```
 
 Start the local server
 
-`nodemon server`
+```
+nodemon server
+```
 
 Open your browser and enter into the address bar
 
-`localhost:8000`
+```
+localhost:8000
+```
 
 Now you should have a local copy of the website running in your browser
 
