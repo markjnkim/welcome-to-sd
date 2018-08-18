@@ -45,7 +45,7 @@ nodemon server
 
 That's it, now the app should be running on <http://localhost:8000>. 
 
-Now you should have a local copy of the website running in your browser
+
 
 ## Dependencies
 * npm - [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
