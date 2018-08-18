@@ -22,9 +22,7 @@ To view the deployed site please click [here](http://guide-san-diego.herokuapp.c
 ## Getting Started
 ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
 
-## Installation Instructions
-
-### To host on a local server
+## How to run this app on a local server
 
 Clone the repo
 
@@ -45,11 +43,7 @@ Start the local server
 nodemon server
 ```
 
-Open your browser and enter into the address bar
-
-```
-localhost:8000
-```
+That's it, your app should be running on <http://localhost:8000>. 
 
 Now you should have a local copy of the website running in your browser
 
