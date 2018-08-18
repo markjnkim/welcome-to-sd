@@ -111,7 +111,7 @@ myApp.herokuapp.com
 
 ## Authors
 
-***Mark Kim*** - *more work* - [Mark Kim](https://github.com/markjnkim)
+***Mark Kim*** - [*more work*](https://github.com/markjnkim)
 
 
 ## License
