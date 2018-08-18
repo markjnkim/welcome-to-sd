@@ -34,7 +34,8 @@ cd welcome-to-sd
 
 Use npm to install package dependencies
 
-```npm install
+```
+npm install
 ```
 
 Start the local server
