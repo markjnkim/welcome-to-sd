@@ -73,7 +73,7 @@ Now you should have a local copy of the website running in your browser
 
 ## Authors
 
-* **Mark Kim** - *more work* - [Mark Kim](https://github.com/markjnkim)
+***Mark Kim** - *more work* - [Mark Kim](https://github.com/markjnkim)
 
 
 ## License
