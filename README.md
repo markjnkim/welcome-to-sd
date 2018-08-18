@@ -2,11 +2,10 @@
 ![home page gif](/assets/images/homepage.gif)
 
 
-A mobile responsive full stack web application that assists Airbnb guests to utilize house amenities, understand house policies, and guide to local hot spots.
+A mobile responsive full stack website that assists Airbnb guests to utilize house amenities, understand house policies, and guide to local hot spots.
 This provides an ability to have an incredible amount of information readily available to your guests.
-This is a fullstack node app that uses mysql, express, node.js along with materialize, jQuery, javascript and css on the front end.
-Here are some screen shots of the use of Materialize cards and jQuery methods.
-
+This is a full stack node.js app that employees mysql, and express along with Materialize, jQuery, javascript and css on the front end.
+Here are some screen shots of the use of Materialize components and jQuery methods.
 
 ![local guide gif](/assets/images/localguide.gif)
 
@@ -44,7 +43,7 @@ Start the local server
 nodemon server
 ```
 
-That's it, your app should be running on <http://localhost:8000>. 
+That's it, now the app should be running on <http://localhost:8000>. 
 
 Now you should have a local copy of the website running in your browser
 
@@ -69,12 +68,50 @@ Now you should have a local copy of the website running in your browser
 * [Materialize](https://materialize.css.com/) - CSS Framework
 * [jQuery](https://jquery.com/) - Javascript Library
 
+
+## Deployment (Heroku)
+
+### Create a Git Repo
+
+Once you're ready to deploy, start by making sure your project is a git repository. If so, proceed to the next section, otherwise run the following commands in your terminal:
+
+```
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+### Heroku
+
+Make sure that you have a Heroku app created for this project. If so, proceed to the next section, otherwise run the following command in your terminal:
+
+```
+heroku create
+```
+
+Optionally add an argument for your application's name after `create`, e.g.
+
+```
+heroku create myApp
+```
+
+### Deploying
+
+
+After confirming that you have an up to date git repository and a Heroku app created, run the following command to link up the remote and push to heroku:
+```
+git push heroku master
+```
+That's it, now your app should be deployed to your app's name at
+```
+myApp.herokuapp.com
+```
 ## Contributing
 @SwarnaKishore for Materialize Parallax template
 
 ## Authors
 
-***Mark Kim** - *more work* - [Mark Kim](https://github.com/markjnkim)
+***Mark Kim*** - *more work* - [Mark Kim](https://github.com/markjnkim)
 
 
 ## License
