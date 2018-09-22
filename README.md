@@ -40,7 +40,7 @@ npm install
 Start the local server
 
 ```
-nodemon server
+node server.js
 ```
 
 That's it, now the app should be running on <http://localhost:8000>. 
