@@ -56,7 +56,7 @@ That's it, now the app should be running on <http://localhost:8000>.
 * sequelize     -     [![npm version](https://badge.fury.io/js/sequelize.svg)](https://badge.fury.io/js/sequelize)
 * sequelize-cli  -    [![npm version](https://badge.fury.io/js/sequelize-cli.svg)](https://badge.fury.io/js/sequelize-cli)
 
-#### mysql is used to store communication from guests from the contact page
+#### mySQL is used to store communication from guests from the contact page
 
 ![contact gif](/assets/images/contact_pg.gif)
 
@@ -108,7 +108,7 @@ myApp.herokuapp.com
 
 ### Issues with mySQL
 
-when starting the mysql server it is critical to 
+When starting the mysql server it is critical to 
   START SERVER  
   If you are having issues with permissions in 
   mySQL Workbench go to
@@ -117,6 +117,19 @@ when starting the mysql server it is critical to
   make sure your user = root 
   ![user root](/assets/images/mySQL_server.png)
 
+Double check DB and Table are set up correctly
+```
+DROP DATABASE IF EXISTS `message_db`;
+CREATE DATABASE `message_db`;
+USE `message_db`;
+CREATE TABLE  messages (
+	body TEXT,
+    first_name VARCHAR(255) NOT NULL,
+    subject VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+	last_name VARCHAR(255) NOT NULL
+    );
+```
 ## Contributing
 @SwarnaKishore for Materialize Parallax template
 
