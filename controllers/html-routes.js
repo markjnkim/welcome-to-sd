@@ -8,6 +8,7 @@
 // Routes
 // =============================================================
 module.exports = function (app) {
+
 	app.get("/policy", function (req, res) {
 		res.render('policy');
 	})
@@ -15,12 +16,17 @@ module.exports = function (app) {
 	app.get("/house_manual", function (req, res) {
 		res.render('house_manual');
 	})
+
 	app.get("/local_guide", function (req, res) {
 		res.render('local_guide');
 	})
 
 	app.get("/contact", function (req, res) {
 		res.render('contact');
+	})
+
+	app.get("/weather", function (req, res) {
+		res.render('weather');
 	})
 
 	app.get("/6192290143/messages", function (req, res) {
@@ -30,9 +36,11 @@ module.exports = function (app) {
 	app.get("/", function (req, res) {
 		res.render('home');
 	})
+
 	app.get("/home", function (req, res) {
 		res.render('home');
 	})
+	
 	app.get("/index", function (req, res) {
 		res.render('home');
 	})
