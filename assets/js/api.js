@@ -6,5 +6,6 @@ const ROOT_URL = `http://api.openweathermap.org/data/2.5/forecast?appid=${API_KE
 export function getWeather(city='San+Diego') {
   const url = `${ROOT_URL}&q=${city},us`;
   const request = axios.get(url);
+  console.log(request)
   return request;
 }
