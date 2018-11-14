@@ -97,7 +97,6 @@ heroku create myApp
 
 ### Deploying
 
-
 After confirming that you have an up to date git repository and a Heroku app created, run the following command to link up the remote and push to heroku:
 ```
 git push heroku master
@@ -106,6 +105,18 @@ That's it, now your app should be deployed to your app's name at
 ```
 myApp.herokuapp.com
 ```
+
+### Issues with mySQL
+
+when starting the mysql server it is critical to 
+  START SERVER  
+  If you are having issues with permissions in 
+  mySQL Workbench go to
+  MANAGE CONNECTIONS selection under
+  DATABASE tab in main nav menu
+  make sure your user = root 
+  ![user root](/assets/images/mySQL_server.png)
+
 ## Contributing
 @SwarnaKishore for Materialize Parallax template
 
