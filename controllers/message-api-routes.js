@@ -2,19 +2,19 @@
 var db = require("../models");
 // var moment = require("moment");
 
-module.exports = function(app) {
+module.exports = function (app) {
 	// Get route for getting all the messages from an author
 	// Index of messages
-	app.get("/api/messages", function(req, res) {
+	app.get("/api/messages", function (req, res) {
 		var query = {};
 		// console.log(res);
 		db.Message.findAll({
 			// include: [db.Author]
 		})
-		.then(function(dbMessage) {
-			res.json(dbMessage);
-		});
-	
+			.then(function (dbMessage) {
+				res.json(dbMessage);
+			});
+
 		// if (req.query.author_id) {
 		// 	query.AuthorId = req.query.author_id;
 		// }
@@ -25,45 +25,47 @@ module.exports = function(app) {
 		// 	res.json(dbMessage);
 		// });
 	});
-	
-	app.get("/api/messages/:id", function(req, res) {
+
+	app.get("/api/messages/:id", function (req, res) {
 		// Show single message in detail
 		db.Message.findOne({
 			where: {
 				id: req.params.id
 			}
-		}).then(function(dbMessage) {
+		}).then(function (dbMessage) {
 			res.json(dbMessage);
 		});
 	});
 
 
-	app.post("/api/messages", function(req, res) {
+	app.post("/api/messages", function (req, res) {
 		// Create Message
-		db.Message.create(req.body).then( function(dbMessage) {
+		db.Message.create(req.body).then(function (dbMessage) {
 			res.json(dbMessage);
 		});
 	});
 
-	app.delete("/api/messages/:id", function(req, res) {
-		db.Message.destroy({
-			where: {
-				id: req.params.id
-			}
-		}).then(function(dbMessage) {
-			res.json(dbMessage);
-		});
-	});
-
-	app.put("/api/messages", function(req, res) {
-		db.Message.update(
-			req.body,
-			{
+	app.delete("/api/messages/:id", function (req, res) {
+		return db.Message
+			.destroy({
 				where: {
-					id: req.body.id
+					id: req.params.id
 				}
-			}).then(function(dbMessage) {
-				res.json(dbMessage);
+			}).then(function (data) {
+				console.log(data);
+				return res.redirect('/6192290143/messages');
 			});
-	});
-};
+
+		app.put("/api/messages", function (req, res) {
+			db.Message.update(
+				req.body,
+				{
+					where: {
+						id: req.body.id
+					}
+				}).then(function (dbMessage) {
+					res.json(dbMessage);
+				});
+		});
+	})
+}

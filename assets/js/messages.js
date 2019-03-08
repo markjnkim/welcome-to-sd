@@ -1,11 +1,12 @@
 // var table = require('console.table');
 $(document).ready(function () {
-  $('tbody').empty()
-  
+  $('tbody').empty();
+  const btn = "<a id='close' style='width:10px;' class='waves-effect waves-light btn red'><i class='material-icons center'>content_cut</i>button</a>";
+  let id;
   // Get all message from every guest
   // Get the data object from database
   $.get('/api/messages', function (data) {
-  // Loop trhough object array for each record
+  // Loop though object array for each record
     data.forEach(function (response) {
       $('tbody').append(
         '<tr><td>' +
@@ -20,8 +21,19 @@ $(document).ready(function () {
           response.id +
           '</td><td>' +
           response.email +
-          '</td></tr>'
-      )
+          '</td><td id="buttonID">' + btn + '</td></tr>'
+      );
+      id = response.id;
     })
+  })
+  $(document).on("click", "#buttonID", function() {
+    console.log("Hello world!");
+    $.ajax({
+      method: "DELETE",
+      url: "/api/messages/"+ id
+    })
+      .done(function( msg ) {
+        alert( "Data Deleted: " + msg );
+      });
   })
 })

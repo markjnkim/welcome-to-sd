@@ -44,6 +44,7 @@ p {
 
 footer.page-footer {
   margin: 0;
+  margin-top: 10px;
 }
 
 .parallax img {
@@ -110,6 +111,11 @@ nav li a {
 
 body {
   font-family: 'Varela Round', sans-serif;
+  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+    
 }
 
 #nav-icon {
@@ -302,15 +308,15 @@ section.header {
   margin-top: -20px;
 }
 .padding-bottom-40 {
-  padding-top: 40px;
+  padding-top: 0px;
 }
 .margin-bottom-0 {
   margin-bottom: 0;
 }
 
-/* #policy-bg {
-background-image: url("images/cali_sunset_pier.jpg")
-} */
+#policy-bg {
+  width: 100%;
+}
 /* .card { height:400px;}
 
 
@@ -357,4 +363,50 @@ textarea:focus.materialize-textarea {
 .input-field input[type='search']:focus + label,
 .input-field textarea:focus.materialize-textarea + label {
   color: orangered;
+}
+
+#buttonID {
+  padding-top: 25px;
+  padding-right: 19px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#contact-note {
+  padding-top: 30px; 
+  max-height: 200px;
+  border-radius: 8px;
+}
+
+#navbar-wrapper {
+  padding-left: 20px;
+  padding-right: 0px;
+  width: 100%;
+}
+
+#mobile-demo {
+  padding-top: 30px;
+}
+
+#nav-bar-large {
+  margin-right: -150px;
+}
+
+#lockbox-img {
+  margin-bottom: 40px;
+}
+
+.house-rules-card {
+
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+#message-table {
+  width: 80%;
 }
