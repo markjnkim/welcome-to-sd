@@ -398,10 +398,6 @@ main {
   margin-bottom: 40px;
 }
 
-.house-rules-card {
-
-}
-
 .content {
   height: 100%;
   width: 100%;
@@ -413,4 +409,10 @@ main {
 
 .button-size {
   width: 9px;
+  color: red;
+  padding-right: 15px;
+}
+
+.button-size:hover{
+  cursor: pointer;
 }

@@ -53,7 +53,7 @@ module.exports = app => {
 	app.delete("/api/messages/:id", (req, res) => {
 		return db.Message
 			.findById(req.params.id)
-			.then(message => {
+			.then( message => {
 				message.destroy()
 				// console.log("____________---------------________________");
 				// req.request = "GET";
@@ -61,7 +61,7 @@ module.exports = app => {
 				res.sendStatus(200);
 				// res.redirect(303, "/");
 			})
-			.catch(err => res.status(422).json(err));
+			// .catch(err => res.status(422).json(err));
 	})
 
 	app.put("/api/messages", (req, res) => {
