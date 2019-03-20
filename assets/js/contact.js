@@ -24,9 +24,30 @@ $(document).ready(function () {
     // Create new entry in DB
     // $.post('/api/authors', newAuthor).then(function () {})
 
-    $.post('/api/messages', newMessage).then(function () {
-      alert('Thank you for your message!')
+    // $.post('/api/messages', newMessage)
+    // .then(function () {
+    //   alert('Thank you for your message!')
+    // })
+
+    $.ajax({
+      url: '/api/messages',
+      method: 'POST',
+      xhrFields: {
+        withCredentials: true
+      },
+      data: newMessage,
+      success: function (response) {
+        console.log(response)
+      },
+      error: function (xhr, status) {
+        console.log(xhr)
+        console.log(status)
+      }
+
     })
+    // xhrFields: {
+    //   withCredentials: true
+    // },
 
     $first_name.val('')
     $last_name.val('')
@@ -41,7 +62,7 @@ $(document).ready(function () {
     // getAuthors();
 
     // Function to handle what happens when the send button is submitted
-    function handleSend (event) {
+    function handleSend(event) {
       event.preventDefault()
       alert('click event triggered - handleSend')
 
@@ -55,7 +76,7 @@ $(document).ready(function () {
       })
     }
     // AJAX call creating Author, persists browser data
-    function upsertAuthor (authorData) {
+    function upsertAuthor(authorData) {
       $.post('api/authors', authorData).then(function () {
         console.log(authorData)
         alert(authorData)

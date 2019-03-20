@@ -410,3 +410,7 @@ main {
 #message-table {
   width: 80%;
 }
+
+.button-size {
+  width: 9px;
+}

@@ -2,16 +2,16 @@
 var db = require("../models");
 // var moment = require("moment");
 
-module.exports = function (app) {
+module.exports = app => {
 	// Get route for getting all the messages from an author
 	// Index of messages
-	app.get("/api/messages", function (req, res) {
+	app.get("/api/messages", (req, res) => {
 		var query = {};
 		// console.log(res);
 		db.Message.findAll({
 			// include: [db.Author]
 		})
-			.then(function (dbMessage) {
+			.then(dbMessage => {
 				res.json(dbMessage);
 			});
 
@@ -26,46 +26,54 @@ module.exports = function (app) {
 		// });
 	});
 
-	app.get("/api/messages/:id", function (req, res) {
+	app.get("/api/messages/:id", (req, res) => {
 		// Show single message in detail
-		db.Message.findOne({
-			where: {
-				id: req.params.id
-			}
-		}).then(function (dbMessage) {
-			res.json(dbMessage);
-		});
-	});
-
-
-	app.post("/api/messages", function (req, res) {
-		// Create Message
-		db.Message.create(req.body).then(function (dbMessage) {
-			res.json(dbMessage);
-		});
-	});
-
-	app.delete("/api/messages/:id", function (req, res) {
-		return db.Message
-			.destroy({
+		db.Message
+			.findOne({
 				where: {
 					id: req.params.id
 				}
-			}).then(function (data) {
-				console.log(data);
-				return res.redirect('/6192290143/messages');
+			})
+			.then(dbMessage => {
+				res.json(dbMessage);
 			});
+	});
 
-		app.put("/api/messages", function (req, res) {
-			db.Message.update(
-				req.body,
-				{
-					where: {
-						id: req.body.id
-					}
-				}).then(function (dbMessage) {
-					res.json(dbMessage);
-				});
-		});
+
+	app.post("/api/messages", (req, res) => {
+		// Create Message
+		db.Message
+			.create(req.body)
+			.then(dbMessage => {
+				res.json(dbMessage);
+			});
+	});
+
+
+	app.delete("/api/messages/:id", (req, res) => {
+		return db.Message
+			.findById(req.params.id)
+			.then(message => {
+				message.destroy()
+				// console.log("____________---------------________________");
+				// req.request = "GET";
+				// res.send("hello world");
+				res.sendStatus(200);
+				// res.redirect(303, "/");
+			})
+			.catch(err => res.status(422).json(err));
 	})
+
+	app.put("/api/messages", (req, res) => {
+		return db.Message.update(
+			req.body,
+			{
+				where: {
+					id: req.body.id
+				}
+			}).then(dbMessage => {
+				res.json(dbMessage);
+			});
+	});
+
 }
